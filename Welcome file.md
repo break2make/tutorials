@@ -1,8 +1,6 @@
  - [ ] List item
 
-|X|Y|
-|-|-|
-|a|b|
+
 
 
 
@@ -105,5 +103,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI3MTY5MDU5XX0=
+eyJoaXN0b3J5IjpbLTQ3NDM4MTg4M119
 -->
