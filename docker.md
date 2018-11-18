@@ -30,6 +30,8 @@ Sometime you will find the “docker build” command to use the cached informat
 In older versions of Docker you needed to pass --no-cache=true, but this is no longer the case.
 Save and load images to/from a local file
 
+# Save/Load images to/from local file
+
 To save an image to a local file, you can use the following command:
 
 `sudo docker save -o path-to/img_filename.tar imgname:tag`
