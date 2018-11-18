@@ -1,6 +1,6 @@
 # Tutorials
 
-Thi
+This repo is used to provide turorials of various topics.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MTU1NzkwMV19
+eyJoaXN0b3J5IjpbLTcwNDY0NzQ4NF19
 -->
