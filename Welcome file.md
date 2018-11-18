@@ -1,4 +1,6 @@
+ - [ ] List item
 
+|
 
 Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
 
@@ -92,5 +94,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODkwNTk1NzRdfQ==
+eyJoaXN0b3J5IjpbLTE5MzI2MTA4MDhdfQ==
 -->
