@@ -50,13 +50,13 @@ Command 2:  (it will not create any permission issues)
 
 # Run/Create a container
 
-sudo docker run -it --rm --network host -v $(pwd)/host_dir_name:absolute-path-to/container_dir img_name:tag command
+`sudo docker run -it --rm --network host -v $(pwd)/host_dir_name:absolute-path-to/container_dir img_name:tag command`
 
 Where:
---rm: container is removed upon exit command in container console
--it: for interactive 
--d: to detach and run the container in background
--v: to create a volume from command line
---network: for network driver 
+`--rm`: container is removed upon exit command in container console
+`-it`: for interactive 
+`-d`: to detach and run the container in background
+`-v`: to create a volume from command line
+`--network`: for network driver 
 
 
