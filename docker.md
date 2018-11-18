@@ -54,9 +54,13 @@ Command 2:  (it will not create any permission issues)
 
 Where:
 `--rm`: container is removed upon exit command in container console
+
 `-it`: for interactive 
+
 `-d`: to detach and run the container in background
+
 `-v`: to create a volume from command line
+
 `--network`: for network driver 
 
 
