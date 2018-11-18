@@ -51,7 +51,7 @@ However, if you save an image using above command, there might be a permission i
 
 `sudo docker save imgname:tag > path-to/img_filename.tar`
 
-Once the image is saved to local file, you might want to get the that image in docker from the *.tar file. To load the image from the *.tar file into the docker local image repo, use the one of the following commands:
+Once the image is saved to local file, you might want to get the that image in docker from the *.tar file. \To load the \'image from the *.tar file into the docker local image repo, use the one of the following commands:
 
 Command 1: 
 
@@ -66,15 +66,11 @@ Command 2:  (it will not create any permission issues)
 `sudo docker run -it --rm --network host -v $(pwd)/host_dir_name:absolute-path-to/container_dir img_name:tag command`
 
 Where:
-`--rm`: container is removed upon exit command in container console
-
-`-it`: for interactive 
-
-`-d`: to detach and run the container in background
-
-`-v`: to create a volume from command line
-
-`--network`: for network driver 
+`--rm`: container is removed upon exit command in container console \
+`-it`: for interactive \
+`-d`: to detach and run the container in background \
+`-v`: to create a volume from command line \
+`--network`: for network driver \
 
 # Save a container as docker image
 
