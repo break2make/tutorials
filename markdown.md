@@ -6,3 +6,7 @@ Following approach is tested in Github. Following approach can be followed to ge
 - Or use classic `<br>`
 
 # Comment
+
+
+# Important links
+- https://www.markdownguide.org/extended-syntax/
