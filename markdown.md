@@ -10,3 +10,4 @@ Following approach is tested in Github. Following approach can be followed to ge
 
 # Important links
 - https://www.markdownguide.org/extended-syntax/
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
