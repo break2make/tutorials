@@ -103,7 +103,6 @@ CONTAINER ID  IMAGE    COMMAND  CREATED      STATUS      PORTS  NAMES
 
 ```console
 $ sudo docker cp foo.txt 72ca2488b353:/foo.txt
-$ sudo docker cp foo.txt 72ca2488b353:/foo.txt
 ```
 
 *Copy a file from Docker container to host:*
