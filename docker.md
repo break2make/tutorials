@@ -114,9 +114,33 @@ $ sudo docker cp 72ca2488b353:/foo.txt foo.txt`
 For more details, refer to [Docker Documentation](https://docs.docker.com/engine/reference/commandline/cp/)
 
 
+
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+
+
+
 # Docker networking
 
 ## Video Links
 - https://www.youtube.com/watch?v=Xxhhdo2e-DA
 
 
+# References
+
+[MS-2017:] Containers as the foundation for DevOps collaboration. [[Link]](https://docs.microsoft.com/en-us/dotnet/standard/containerized-lifecycle-architecture/docker-application-lifecycle/containers-foundation-for-devops-collaboration)
+
+[PACK-HUB-2017:] Understanding Container Scenarios and Overview of Docker. [[Links]](https://hub.packtpub.com/understanding-container-scenarios-and-overview-docker/)
+
+[Agarwal-2017] Life Cycle of Docker Containers. [[Link]](https://medium.com/@nagarwal/lifecycle-of-docker-container-d2da9f85959)
+
+[Ramraj-2017] From Docker Images -> Docker Container. [[Link]](https://medium.com/@ramrajchandradevan/from-docker-images-docker-container-b6b042b497a8)
+
+[Rajesh-2018] Lifecycle of Docker Containers. [[Link]](http://www.scmgalaxy.com/tutorials/lifecycle-of-docker-containers/)
+
+[Devhints] Docker CLI cheatsheet. [[Link]](https://devhints.io/docker)
+
+Docker Internals. [[Link]](http://docker-saigon.github.io/post/Docker-Internals/)
