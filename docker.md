@@ -111,6 +111,8 @@ $ sudo docker cp foo.txt 72ca2488b353:/foo.txt
 $ sudo docker cp 72ca2488b353:/foo.txt foo.txt`
 ```
 
+For more details, refer to [Docker Documentation](https://docs.docker.com/engine/reference/commandline/cp/)
+
 
 # Docker networking
 
