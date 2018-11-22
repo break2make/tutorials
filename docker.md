@@ -85,8 +85,8 @@ The docker cp command is used for copying files and folders between Docker conta
 **Command Usage**
 
 ```console
-docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|- 
-docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
+$ sudo docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|- 
+$ sudo docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 ```    
  
 **Example**
@@ -94,7 +94,7 @@ docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 First find the container’s name or ID using the docker ps command:
 
 ```console
-$ docker ps
+$ sudo docker ps
 CONTAINER ID  IMAGE    COMMAND  CREATED      STATUS      PORTS  NAMES 
 72ca2488b353  my_image          X hours ago  Up X hours         my_container`
 ```
@@ -102,13 +102,14 @@ CONTAINER ID  IMAGE    COMMAND  CREATED      STATUS      PORTS  NAMES
 *Copy a file from host to container:* 
 
 ```console
-$ docker cp foo.txt 72ca2488b353:/foo.txt
+$ sudo docker cp foo.txt 72ca2488b353:/foo.txt
+$ sudo docker cp foo.txt 72ca2488b353:/foo.txt
 ```
 
 *Copy a file from Docker container to host:*
 
 ```console
-$ docker cp 72ca2488b353:/foo.txt foo.txt`
+$ sudo docker cp 72ca2488b353:/foo.txt foo.txt`
 ```
 
 
