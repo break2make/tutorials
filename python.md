@@ -10,9 +10,8 @@ os is largely thin wrappers around POSIX system calls and library functions, or 
 shutil contains high-level Python-specific functions. These are built on top of Python’s os module and each call may represent dozens or hundreds of calls to lower-level functions.
 
 - shutil — High-level file operations
--- https://automatetheboringstuff.com/chapter9/
+- - https://automatetheboringstuff.com/chapter9/
 - https://pypi.org/project/pyfastcopy/
--- 
 
 
 
