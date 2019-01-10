@@ -11,6 +11,7 @@ shutil contains high-level Python-specific functions. These are built on top of 
 
 - shutil — High-level file operations
   - https://automatetheboringstuff.com/chapter9/
+  - https://stackoverflow.com/questions/12990112/how-to-remove-folder-in-python-rmtree-onerror
 - https://pypi.org/project/pyfastcopy/
 
 
