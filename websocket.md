@@ -1,3 +1,8 @@
+# Important Comparison
+* REST vs Websocket API
+* Websocket vs HTTP
+* Websocket vs MQTT
+
 
 # Important Links
 * https://blogs.windows.com/windowsdeveloper/2016/03/14/when-to-use-a-http-call-instead-of-a-websocket-or-http-2-0/
