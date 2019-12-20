@@ -45,4 +45,35 @@ CONFIG_INTEGRITY_TRUSTED_KEYRING=y
 CONFIG_INTEGRITY_AUDIT=y
 ```
 
+# Load/insert Kernel Module
+
+`insmod` command is used inser (load) a kernel module. 
+Use `modinfo` command to find the path to `*.ko` file of the target module
+
+```bash
+modinfo dm-crypt
+filename:       /lib/modules/5.0.0-32-generic/kernel/drivers/md/dm-crypt.ko
+license:        GPL
+description:    device-mapper target for transparent encryption / decryption
+author:         Jana Saout <jana@saout.de>
+srcversion:     9045FA5BAEE3BA3CEBFEBB0
+depends:        
+retpoline:      Y
+intree:         Y
+name:           dm_crypt
+vermagic:       5.0.0-32-generic SMP mod_unload 
+signat:         PKCS#7
+signer:         
+sig_key:        
+sig_hashalgo:   md4
+```
+Before going to install the target module, first check whether all dependencies are installed and it can befound 
+in `depends:   `. In case of dm-crypt, there is no dependence mentioned. So you can proceed for the loading the dm-crypt module. `filename: ` value is required to load the module.
+
+```bash
+$ sudo insmod /lib/modules/5.0.0-32-generic/kernel/drivers/md/dm-crypt.ko
+```
+
+
+
 
