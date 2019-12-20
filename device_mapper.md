@@ -51,7 +51,7 @@ CONFIG_INTEGRITY_AUDIT=y
 Use `modinfo` command to find the path to `*.ko` file of the target module
 
 ```bash
-modinfo dm-crypt
+$ modinfo dm-crypt
 filename:       /lib/modules/5.0.0-32-generic/kernel/drivers/md/dm-crypt.ko
 license:        GPL
 description:    device-mapper target for transparent encryption / decryption
@@ -68,12 +68,42 @@ sig_key:
 sig_hashalgo:   md4
 ```
 Before going to install the target module, first check whether all dependencies are installed and it can befound 
-in `depends:   `. In case of dm-crypt, there is no dependence mentioned. So you can proceed for the loading the dm-crypt module. `filename: ` value is required to load the module.
+in `depends:   `. In the following example tries to insert a module which is already loaded:
+
+```bash
+$ sudo insmod /lib/modules/5.0.0-32-generic/kernel/crypto/xor.ko 
+
+insmod: ERROR: could not insert module /lib/modules/5.0.0-32-generic/kernel/crypto/xor.ko: File exists
+```
+
+In case of dm-crypt, there is no dependence mentioned. So you can proceed for the loading the dm-crypt module. `filename: ` value is required to load the module.
 
 ```bash
 $ sudo insmod /lib/modules/5.0.0-32-generic/kernel/drivers/md/dm-crypt.ko
 ```
 
+# Installed DM targets
 
+The command `sudo dmsetup targets` can be used to get the list of loaded dm targets.
+
+Before installing dm verity, integrity and crypt:
+
+```bash
+$ sudo dmsetup targets
+
+striped          v1.6.0
+linear           v1.4.0
+error            v1.5.0
+```
+
+```bash
+sudo dmsetup targets
+[sudo] password for durga: 
+integrity        v1.2.0
+crypt            v1.18.1
+striped          v1.6.0
+linear           v1.4.0
+error            v1.5.0
+```
 
 
