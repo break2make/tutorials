@@ -110,3 +110,20 @@ error            v1.5.0
 ```bash
 $ sudo rmmod /lib/modules/5.0.0-32-generic/kernel/crypto/xor.ko 
 ```
+
+## Alternative command: `modprobe`
+
+`modprobe` is a single utility for listing, inserting and removing kernel modules. You don't need to specify the path of the kernel modules. It automatically searches a module in directory `/lib/modules/$(uname -r)` for all the modules and related files, but excludes alternative configuration files in the /etc/modprobe.d directory.
+
+To load dm-crypt:
+
+```bash
+$ modprobe dm-crypt
+```
+To remove the dm-crypt:
+
+```bash
+$ sudo modprobe -r dm-crypt
+```
+
+
