@@ -98,7 +98,7 @@ error            v1.5.0
 
 ```bash
 sudo dmsetup targets
-[sudo] password for durga: 
+
 integrity        v1.2.0
 crypt            v1.18.1
 striped          v1.6.0
