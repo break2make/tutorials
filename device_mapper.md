@@ -82,7 +82,7 @@ In case of dm-crypt, there is no dependence mentioned. So you can proceed for th
 $ sudo insmod /lib/modules/5.0.0-32-generic/kernel/drivers/md/dm-crypt.ko
 ```
 
-## Installed DM targets
+## List of installed DM targets
 
 The command `sudo dmsetup targets` can be used to get the list of loaded dm targets.
 
@@ -105,5 +105,8 @@ striped          v1.6.0
 linear           v1.4.0
 error            v1.5.0
 ```
+## Remove a loaded kernel module
 
-
+```bash
+$ sudo rmmod /lib/modules/5.0.0-32-generic/kernel/crypto/xor.ko 
+```
