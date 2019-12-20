@@ -45,7 +45,7 @@ CONFIG_INTEGRITY_TRUSTED_KEYRING=y
 CONFIG_INTEGRITY_AUDIT=y
 ```
 
-# Load Kernel Module
+## Load Kernel Module
 
 `insmod` command is used inser (load) a kernel module. 
 Use `modinfo` command to find the path to `*.ko` file of the target module
@@ -82,7 +82,7 @@ In case of dm-crypt, there is no dependence mentioned. So you can proceed for th
 $ sudo insmod /lib/modules/5.0.0-32-generic/kernel/drivers/md/dm-crypt.ko
 ```
 
-# Installed DM targets
+## Installed DM targets
 
 The command `sudo dmsetup targets` can be used to get the list of loaded dm targets.
 
