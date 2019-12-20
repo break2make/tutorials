@@ -45,7 +45,7 @@ CONFIG_INTEGRITY_TRUSTED_KEYRING=y
 CONFIG_INTEGRITY_AUDIT=y
 ```
 
-# Load/insert Kernel Module
+# Load Kernel Module
 
 `insmod` command is used inser (load) a kernel module. 
 Use `modinfo` command to find the path to `*.ko` file of the target module
