@@ -12,7 +12,6 @@ CONFIG_DM_VERITY=m                   -> "m" implies that it is loadable using `i
 ```
 
 [dm-crypt]
-sudo grep CRYPT /boot/config-$(uname -r)
 
 ```bash
 $ sudo grep CRYPT /boot/config-$(uname -r)
@@ -31,6 +30,7 @@ CONFIG_RTLLIB_CRYPTO_CCMP=m
 ```
 
 [dm-integrity]
+
 ```bash
 $ sudo grep INTEGRITY /boot/config-$(uname -r)
 
