@@ -97,7 +97,7 @@ error            v1.5.0
 ```
 
 ```bash
-sudo dmsetup targets
+$ sudo dmsetup targets
 
 integrity        v1.2.0
 crypt            v1.18.1
