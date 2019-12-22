@@ -13,6 +13,13 @@ $ bitbake <recipe-name> -c <task-name>
 
 - BitBake then expects to find the conf/bitbake.conf file somewhere in the user-specified BBPATH. That configuration file generally has include directives to pull in any other metadata such as files specific to the architecture, the machine, the local environment, and so forth.
 
-
 > **NOTE:** 
 Only variable definitions and include directives are allowed in `.conf` files. Some variables directly influence BitBake's behavior. These variables might have been set from the environment depending on the environment variables previously mentioned or set in the configuration files. The "Variables Glossary" chapter presents a full list of variables.
+
+- The base.bbclass file is always included. Other classes that are specified in the configuration using the INHERIT variable are also included. BitBake searches for class files in a "classes" subdirectory under the paths in BBPATH in the same way as configuration files.
+
+- A good way to get an idea of the configuration files and the class files used in your execution environment is to run the following BitBake command:
+
+     $ bitbake -e > mybb.log
+            
+Examining the top of the mybb.log shows you the many configuration files and class files used in your execution environment.
