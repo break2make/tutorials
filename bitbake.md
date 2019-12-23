@@ -73,4 +73,5 @@ If T RDEPENDS on P then T's do_build task ia made to depend on P's do_package_wr
 - https://wiki.rdkcentral.com/display/RDK/Yocto+Developer%27s+Guide
 - https://subscription.packtpub.com/book/virtualization_and_cloud/9781788399210/1/ch01lvl1sec27/debugging-the-build-system
 - https://www.yoctoproject.org/docs/what-i-wish-id-known/
+https://www.yoctoproject.org/docs/
 
