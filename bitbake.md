@@ -1,3 +1,9 @@
+**Summary:**
+- Layers -> Recipes -> Tasks
+- Bitbake executes the tasks in parellel. Thus, specify the dependency usining addtask (internal to recipe), DEPENDS (dependencies among the recipy), RDEPENDS (runtime dependencies for package)
+- Package is not same as recipes. Package is prepared for deployment.
+
+# Bitbake command and its options
 
 Command to execute a specific task of a recipe:
 
@@ -5,7 +11,7 @@ Command to execute a specific task of a recipe:
 $ bitbake <recipe-name> -c <task-name>
 ```
 
-
+# Parsing steps of configuration file(s)
 
 - BitBake first searches the current working directory for an optional `conf/bblayers.conf` configuration file. This file is expected to contain a `BBLAYERS` variable that is *a space delimited list of 'layer' directories*. Recall that if BitBake cannot find a bblayers.conf file then it is assumed the *user has set the BBPATH and BBFILES directly in the environment*.
 
