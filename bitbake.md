@@ -56,3 +56,15 @@ The bitake technicalities are:
 If T DEPENDS on P then T's do_configure task is made to depend on P's do_populate_sysroot task.
 
 If T RDEPENDS on P then T's do_build task ia made to depend on P's do_package_write task.
+
+
+# Links
+- https://a4z.bitbucket.io/docs/BitBake/guide.html
+- https://www.yoctoproject.org/docs/1.6/bitbake-user-manual/bitbake-user-manual.html#var-RDEPENDS
+- http://wiki.openmoko.org/wiki/BitBake_recipe
+- https://stefanchrist.eu/blog/2017_09_15/Yocto%20Recipes%20vs%20Packages.xhtml
+- https://wiki.koansoftware.com/index.php/Bitbake_options
+- https://wiki.rdkcentral.com/display/RDK/Yocto+Developer%27s+Guide
+- https://subscription.packtpub.com/book/virtualization_and_cloud/9781788399210/1/ch01lvl1sec27/debugging-the-build-system
+- https://www.yoctoproject.org/docs/what-i-wish-id-known/
+
