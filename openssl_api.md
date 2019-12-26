@@ -50,4 +50,11 @@ The ``EVP_PKEY_CTX_get_params()`` and ``EVP_PKEY_CTX_set_params()`` functions ge
 Source: https://www.openssl.org/docs/manmaster/man3/EVP_PKEY_CTX_set_params.html  (MUST read link)
 
 
+# RSA Key generation
 
+The following API can be use to update the EVP_PKEY_CTX preated for RSA key:
+```
+int EVP_PKEY_CTX_set_rsa_keygen_bits(EVP_PKEY_CTX *ctx, int mbits);           -> for modulus length in bits
+int EVP_PKEY_CTX_set_rsa_keygen_pubexp(EVP_PKEY_CTX *ctx, BIGNUM *pubexp);    -> to specify the public key
+int EVP_PKEY_CTX_set_rsa_keygen_primes(EVP_PKEY_CTX *ctx, int primes);        
+```
