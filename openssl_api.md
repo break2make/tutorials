@@ -47,7 +47,7 @@ EVP_PKEY *EVP_PKEY_new_raw_private_key(int type, ENGINE *e, const unsigned char 
 
 The ``EVP_PKEY_CTX_get_params()`` and ``EVP_PKEY_CTX_set_params()`` functions get and send arbitrary parameters from and to the algorithm implementation respectively. Not all parameters may be supported by all providers. See OSSL_PROVIDER(3) for more information on providers. See OSSL_PARAM(3) for more information on parameters. These functions must only be called after the EVP_PKEY_CTX has been initialised for use in an operation (for example by EVP_PKEY_sign_init_ex(3), EVP_PKEY_derive_init_ex(3) or other similar functions).
 
-Source: https://www.openssl.org/docs/manmaster/man3/EVP_PKEY_CTX_set_params.html
+Source: https://www.openssl.org/docs/manmaster/man3/EVP_PKEY_CTX_set_params.html  (MUST read link)
 
 
 
