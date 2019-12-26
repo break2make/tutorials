@@ -103,8 +103,6 @@ https://stackoverflow.com/questions/5927164/how-to-generate-rsa-private-key-usin
 https://www.openssl.org/docs/man1.1.1/man3/PEM_read_RSA_PUBKEY.html
 Get RSA structure from EVP_PKEY: https://www.openssl.org/docs/man1.0.2/man3/EVP_PKEY_get1_RSA.html
 
-To extract the component from SRS structure, follow this link: https://www.openssl.org/docs/man1.1.1/man3/RSA_get0_e.html
-
 RSA structure: https://docs.huihoo.com/doxygen/openssl/1.0.1c/crypto_2rsa_2rsa_8h_source.html
 ```
 struct rsa_st
@@ -141,7 +139,7 @@ struct rsa_st
   160     BN_BLINDING *mt_blinding;
   161     };
 ```
-
+To extract the component from SRS structure, follow this link: https://www.openssl.org/docs/man1.1.1/man3/RSA_get0_e.html
 
 # Links
 ## Book
