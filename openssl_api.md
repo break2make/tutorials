@@ -101,6 +101,46 @@ EVP_PKEY *PEM_read_bio_PUBKEY(BIO *bp, EVP_PKEY **x,
 Another way to generate RSA key:
 https://stackoverflow.com/questions/5927164/how-to-generate-rsa-private-key-using-openssl
 https://www.openssl.org/docs/man1.1.1/man3/PEM_read_RSA_PUBKEY.html
+Get RSA structure from EVP_PKEY: https://www.openssl.org/docs/man1.0.2/man3/EVP_PKEY_get1_RSA.html
+
+To extract the component from SRS structure, follow this link: https://www.openssl.org/docs/man1.1.1/man3/RSA_get0_e.html
+
+RSA structure: https://docs.huihoo.com/doxygen/openssl/1.0.1c/crypto_2rsa_2rsa_8h_source.html
+```
+struct rsa_st
+  130     {
+  131     /* The first parameter is used to pickup errors where
+  132      * this is passed instead of aEVP_PKEY, it is set to 0 */
+  133     int pad;
+  134     long version;
+  135     const RSA_METHOD *meth;
+  136     /* functional reference if 'meth' is ENGINE-provided */
+  137     ENGINE *engine;
+  138     BIGNUM *n;
+  139     BIGNUM *e;
+  140     BIGNUM *d;
+  141     BIGNUM *p;
+  142     BIGNUM *q;
+  143     BIGNUM *dmp1;
+  144     BIGNUM *dmq1;
+  145     BIGNUM *iqmp;
+  146     /* be careful using this if the RSA structure is shared */
+  147     CRYPTO_EX_DATA ex_data;
+  148     int references;
+  149     int flags;
+  150 
+  151     /* Used to cache montgomery values */
+  152     BN_MONT_CTX *_method_mod_n;
+  153     BN_MONT_CTX *_method_mod_p;
+  154     BN_MONT_CTX *_method_mod_q;
+  155 
+  156     /* all BIGNUM values are actually in the following data, if it is not
+  157      * NULL */
+  158     char *bignum_data;
+  159     BN_BLINDING *blinding;
+  160     BN_BLINDING *mt_blinding;
+  161     };
+```
 
 
 # Links
