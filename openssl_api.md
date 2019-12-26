@@ -96,6 +96,8 @@ EVP_PKEY *PEM_read_bio_PUBKEY(BIO *bp, EVP_PKEY **x,
 
 Another way to generate RSA key:
 https://stackoverflow.com/questions/5927164/how-to-generate-rsa-private-key-using-openssl
+https://www.openssl.org/docs/man1.1.1/man3/PEM_read_RSA_PUBKEY.html
+
 
 # Links
 ## Book
