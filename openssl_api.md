@@ -1,4 +1,6 @@
+# Dealing with .PEM files
 
+The PEM functions read or write structures in PEM format. In this sense PEM format is simply base64 encoded data surrounded by header lines. For details about the OpenSSL pem function, read https://www.openssl.org/docs/man1.1.1/man3/PEM_write_PrivateKey.html
 
 # Key management using EVP API
 
