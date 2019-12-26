@@ -76,7 +76,7 @@ pkey_rsa_ctrl_str: https://github.com/openssl/openssl/blob/master/crypto/rsa/rsa
 
 **You could use following methods to separate public key and private key for future use.**
 
-````
+```
 int PEM_write_bio_PrivateKey(BIO *bp, EVP_PKEY *x, const EVP_CIPHER *enc,
                     unsigned char *kstr, int klen,
                     pem_password_cb *cb, void *u);
