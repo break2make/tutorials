@@ -69,6 +69,8 @@ The EVP_PKEY_CTX_set_rsa_keygen_pubexp() macro sets the public exponent value fo
 
 The EVP_PKEY_CTX_set_rsa_keygen_primes() macro sets the number of primes for RSA key generation to primes. If not specified 2 is used.
 
+pkey_rsa_ctrl_str: https://github.com/openssl/openssl/blob/master/crypto/rsa/rsa_pmeth.c
+
 
 # Links
 ## Book
