@@ -54,6 +54,8 @@ Source: https://www.openssl.org/docs/manmaster/man3/EVP_PKEY_CTX_set_params.html
 This api is internally used by many openssl function to manage the EVP_KEY_CTX parameter
 Source: https://github.com/openssl/openssl/blob/master/crypto/evp/pmeth_lib.c
 
+EVP_PKEY_CTX_ctrl() and its macros return a positive value for success and 0 or a negative value for failure. In particular a return value of -2 indicates the operation is not supported by the public key algorithm. https://www.openssl.org/docs/man1.0.2/man3/EVP_PKEY_CTX_ctrl.html
+
 
 # RSA Key generation
 
