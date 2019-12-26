@@ -60,6 +60,6 @@ int EVP_PKEY_CTX_set_rsa_keygen_primes(EVP_PKEY_CTX *ctx, int primes);
 ```
 The EVP_PKEY_CTX_set_rsa_keygen_bits() macro sets the RSA key length for RSA key generation to bits. If not specified 1024 bits is used.
 
-The EVP_PKEY_CTX_set_rsa_keygen_pubexp() macro sets the public exponent value for RSA key generation to pubexp. Currently it should be an odd integer. The pubexp pointer is used internally by this function so it should not be modified or freed after the call. If not specified 65537 is used.
+The EVP_PKEY_CTX_set_rsa_keygen_pubexp() macro sets the public exponent value for RSA key generation to pubexp. Currently it should be an odd integer. The pubexp pointer is used internally by this function so it should not be modified or freed after the call. If not specified 65537 is used. The exponent is an odd number, typically 3, 17 or 65537
 
 The EVP_PKEY_CTX_set_rsa_keygen_primes() macro sets the number of primes for RSA key generation to primes. If not specified 2 is used.
