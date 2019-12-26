@@ -49,7 +49,8 @@ The ``EVP_PKEY_CTX_get_params()`` and ``EVP_PKEY_CTX_set_params()`` functions ge
 
 Source: https://www.openssl.org/docs/manmaster/man3/EVP_PKEY_CTX_set_params.html  (MUST read link)
 
-** EVP_PKEY_CTX_ctrl **
+**EVP_PKEY_CTX_ctrl**
+
 This api is internally used by many openssl function to manage the EVP_KEY_CTX parameter
 Source: https://github.com/openssl/openssl/blob/master/crypto/evp/pmeth_lib.c
 
