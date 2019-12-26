@@ -74,6 +74,24 @@ The EVP_PKEY_CTX_set_rsa_keygen_primes() macro sets the number of primes for RSA
 pkey_rsa_ctrl_str: https://github.com/openssl/openssl/blob/master/crypto/rsa/rsa_pmeth.c
 
 
+**You could use following methods to separate public key and private key for future use.**
+
+int PEM_write_bio_PrivateKey(BIO *bp, EVP_PKEY *x, const EVP_CIPHER *enc,
+                    unsigned char *kstr, int klen,
+                    pem_password_cb *cb, void *u);
+
+ int PEM_write_PrivateKey(FILE *fp, EVP_PKEY *x, const EVP_CIPHER *enc,
+                    unsigned char *kstr, int klen,
+                    pem_password_cb *cb, void *u);
+EVP_PKEY *PEM_read_bio_PUBKEY(BIO *bp, EVP_PKEY **x,
+                    pem_password_cb *cb, void *u);
+
+ EVP_PKEY *PEM_read_PUBKEY(FILE *fp, EVP_PKEY **x,
+                    pem_password_cb *cb, void *u);
+
+ int PEM_write_bio_PUBKEY(BIO *bp, EVP_PKEY *x);
+ int PEM_write_PUBKEY(FILE *fp, EVP_PKEY *x);
+
 # Links
 ## Book
 - Network Security with OpenSSL: Cryptography for Secure Communications
