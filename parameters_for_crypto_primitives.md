@@ -30,9 +30,30 @@ _Important notes:_
 - If Alice maliciously chooses invalid curve points for her key and Bob does not validate that Alice's points are part of the selected group, she can collect enough residues of Bob's key to derive his private key. Several TLS libraries were found to be vulnerable to this attack.
 - While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange.
 
-Ephemeral ECDH
+_Here's how it works:_
+
+ECDH is a variant of the Diffie-Hellman algorithm for elliptic curves. It is actually a key-agreement protocol, more than an encryption algorithm. This basically means that ECDH defines (to some extent) how keys should be generated and exchanged between parties. How to actually encrypt data using such keys is up to us.
+
+The problem it solves is the following: two parties (the usual Alice and Bob) want to exchange information securely, so that a third party (the Man In the Middle) may intercept them, but may not decode them. This is one of the principles behind TLS.
+
+1. **Alice and Bob generate their own private and public keys.** Let *d<sub>A</sub>* and *H<sub>A</sub> = d<sub>A</sub>G* be the private and public keys of Alice, and the *d<sub>B</sub>* and *H<sub>B</sub> = d<sub>B</sub>G* are private and public keys for Bob. Note that both Alice and Bob are using the same domain parameters: the same base point *G* on the same elliptic curve on the same finite field.
+
+2. **Alice and Bob exchange their public keys *H<sub>A</sub>* and *H<sub>B</sub>* over an insecure channel.** The Man In the Middle would intercept these public keys, but won't be able to find out neither *d<sub>A</sub>* nor *d<sub>B</sub>* without solving the discrete logarithm problem.
+
+3. Alice calculates *S = d<sub>A</sub>H<sub>B</sub>* (using her own private key and Bob's public key), and Bob calculates *S = d<sub>B</sub>H<sub>A</sub>* (using his own private key and Alice's public key). Note that  *S* is the same for both Alice and Bob, in fact: 
+
+> *S = d<sub>B</sub>H<sub>A</sub> = d<sub>B</sub>(d<sub>A</sub>G) = d<sub>A</sub>(d<sub>B</sub>G) = d<sub>A</sub>H<sub>B</sub>*
+
+
+The Man In the Middle, however, only knows *H<sub>A</sub>* and *H<sub>B</sub>* (together with the other domain parameters) and would not be able to find out the shared secret *S*. This is known as the Diffie-Hellman problem, which can be stated as follows:
+
+> Given three points *P*, *aP* and *bP*, what is the result of *abP*?
+
 
 ### Ephemeral ECDH
-The "E" in ECDHE stands for "Ephemeral" and it implies that the keys exchanged are temporary, rather than permanent.
+
+The public keys are either static (and trusted, say via a certificate) or ephemeral (also known as ECDHE, where final 'E' stands for "ephemeral"). Ephemeral keys are temporary and not necessarily authenticated, so if authentication is desired, authenticity assurances must be obtained by other means. Authentication is necessary to avoid man-in-the-middle attacks. If one of either Alice's or Bob's public keys is static, then man-in-the-middle attacks are thwarted. Static public keys provide neither forward secrecy nor key-compromise impersonation resilience, among other advanced security properties. Holders of static private keys should validate the other public key, and should apply a secure key derivation function to the raw Diffie–Hellman shared secret to avoid leaking information about the static private key.
+
+The "E" in ECDHE stands for "Ephemeral" and it implies that the keys exchanged are temporary, rather than per.
 ECDHE is used, for example, in TLS, where both the client and the server generate their public-private key pair on the fly, when the connection is established. The keys are then signed with the TLS certificate (for authentication) and exchanged between the parties.
 
