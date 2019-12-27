@@ -24,12 +24,13 @@ Ans. Check this linkn for answer: https://crypto.stackexchange.com/questions/348
 ### Domain parameters
 Our elliptic curve algorithms will work in a cyclic subgroup of an elliptic curve over a finite field. Therefore, our algorithms will need the following parameters:
 
-The prime  that specifies the size of the finite field.
-The coefficients  and  of the elliptic curve equation.
-The base point  that generates our subgroup.
-The order  of the subgroup.
-The cofactor  of the subgroup.
-In conclusion, the domain parameters for our algorithms are the sextuple .
++ The prime *p* that specifies the size of the finite field.
++ The coefficients *a* and *b* of the elliptic curve equation.
++ The base point *G* that generates our subgroup.
++ The order *n* of the subgroup.
++ The cofactor  of the subgroup.
+
+To summarizes, the domain parameters EC algorithms can be represented as 6-tuple *(p, a, b, G, n, h)*, and all these can be public information without any information leakage.
 
 ### Algorithms
 #### ECDH
