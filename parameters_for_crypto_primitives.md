@@ -1,6 +1,6 @@
 
 
-## HMAC Parameters
+## HMAC and security sarameters
 
 _"In cryptography, an HMAC (sometimes expanded as either keyed-hash message authentication code or hash-based message authentication code) is a specific type of message authentication code (MAC) involving a cryptographic hash function and a secret cryptographic key. It may be used to simultaneously verify both the data integrity and the authenticity of a message, as with any MAC. Any cryptographic hash function, such as SHA-256 or SHA-3, may be used in the calculation of an HMAC; the resulting MAC algorithm is termed HMAC-X, where X is the hash function used (e.g. HMAC-SHA256 or HMAC-SHA3)."_ https://en.wikipedia.org/wiki/HMAC
 
@@ -19,5 +19,20 @@ Is there any good reason to use a 64-byte key instead of a 32-byte key?_
 Ans. Check this linkn for answer: https://crypto.stackexchange.com/questions/34864/key-size-for-hmac-sha256
 
 
+## Eliptic curve algorithms and security parameters
 
+### ECDH
+_Source: Wikipedia_
+
+Elliptic-curve Diffie–Hellman (ECDH) is a key agreement protocol that allows two parties, each having an elliptic-curve public–private key pair, to establish a shared secret over an _insecure channel_. This shared secret may be directly used as a key, or to derive another key. The key, or the derived key, can then be used to encrypt subsequent communications using a symmetric-key cipher. It is a variant of the Diffie–Hellman protocol using elliptic-curve cryptography.
+
+_Important notes:_
+- If Alice maliciously chooses invalid curve points for her key and Bob does not validate that Alice's points are part of the selected group, she can collect enough residues of Bob's key to derive his private key. Several TLS libraries were found to be vulnerable to this attack.
+- While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange.
+
+Ephemeral ECDH
+
+### Ephemeral ECDH
+The "E" in ECDHE stands for "Ephemeral" and it implies that the keys exchanged are temporary, rather than permanent.
+ECDHE is used, for example, in TLS, where both the client and the server generate their public-private key pair on the fly, when the connection is established. The keys are then signed with the TLS certificate (for authentication) and exchanged between the parties.
 
