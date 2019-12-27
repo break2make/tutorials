@@ -21,7 +21,18 @@ Ans. Check this linkn for answer: https://crypto.stackexchange.com/questions/348
 
 ## Eliptic curve algorithms and security parameters
 
-### ECDH
+### Domain parameters
+Our elliptic curve algorithms will work in a cyclic subgroup of an elliptic curve over a finite field. Therefore, our algorithms will need the following parameters:
+
+The prime  that specifies the size of the finite field.
+The coefficients  and  of the elliptic curve equation.
+The base point  that generates our subgroup.
+The order  of the subgroup.
+The cofactor  of the subgroup.
+In conclusion, the domain parameters for our algorithms are the sextuple .
+
+### Algorithms
+#### ECDH
 _Source: Wikipedia/ https://andrea.corbellini.name/2015/05/30/elliptic-curve-cryptography-ecdh-and-ecdsa/_
 
 Elliptic-curve Diffie–Hellman (ECDH) is a key agreement protocol that allows two parties, each having an elliptic-curve public–private key pair, to establish a shared secret over an _insecure channel_. This shared secret may be directly used as a key, or to derive another key. The key, or the derived key, can then be used to encrypt subsequent communications using a symmetric-key cipher. It is a variant of the Diffie–Hellman protocol using elliptic-curve cryptography.
@@ -48,7 +59,7 @@ The Man In the Middle, however, only knows *H<sub>A</sub>* and *H<sub>B</sub>* (
 - If Alice maliciously chooses invalid curve points for her key and Bob does not validate that Alice's points are part of the selected group, she can collect enough residues of Bob's key to derive his private key. Several TLS libraries were found to be vulnerable to this attack.
 - While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange.
 
-#### Ephemeral ECDH
+##### Ephemeral ECDH
 
 The public keys are either static (and trusted, say via a certificate) or ephemeral (also known as ECDHE, where final 'E' stands for "ephemeral"). Ephemeral keys are temporary and not necessarily authenticated, so if authentication is desired, authenticity assurances must be obtained by other means. Authentication is necessary to avoid man-in-the-middle attacks. If one of either Alice's or Bob's public keys is static, then man-in-the-middle attacks are thwarted. ***Static public keys provide neither forward secrecy nor key-compromise impersonation resilience, among other advanced security properties.*** Holders of static private keys should validate the other public key, and should apply a secure key derivation function to the raw Diffie–Hellman shared secret to avoid leaking information about the static private key.
 
@@ -56,7 +67,7 @@ The "E" in ECDHE stands for "Ephemeral" and it implies that the keys exchanged a
 ECDHE is used, for example, in TLS, where both the client and the server generate their public-private key pair on the fly, when the connection is established. The keys are then signed with the TLS certificate (for authentication) and exchanged between the parties.
 
 
-#### Ephemeral Diffie-Hellman vs static Diffie-Hellman
+##### Ephemeral Diffie-Hellman vs static Diffie-Hellman
 source: https://tls.mbed.org/kb/cryptography/ephemeral-diffie-hellman
 
 Ephemeral Diffie-Hellman (DHE in the context of TLS) differs from the static Diffie-Hellman (DH) in the way that static Diffie-Hellman key exchanges always use the same Diffie-Hellman private keys (i.e. same private keys of client and server). So, each time the same parties do a DH key exchange, they end up with the same shared secret.
@@ -80,4 +91,8 @@ There are a lot of ciphersuites that support Ephemeral Diffie-Hellman. The key e
 - Elliptic Curve Ephemeral Diffie Hellman with ECDSA (ECDHE-ECDSA) key exchange
 - Pre Shared Key with Diffie Hellman (DHE-PSK) key exchange
 - Pre Shared Key with Elliptic Curve Diffie Hellman (ECDHE-PSK) key exchange 
+
+#### ECDSA
+Source: https://andrea.corbellini.name/2015/05/30/elliptic-curve-cryptography-ecdh-and-ecdsa/_
+Read the above link
 
