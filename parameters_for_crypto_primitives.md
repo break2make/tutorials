@@ -48,7 +48,7 @@ The Man In the Middle, however, only knows *H<sub>A</sub>* and *H<sub>B</sub>* (
 - If Alice maliciously chooses invalid curve points for her key and Bob does not validate that Alice's points are part of the selected group, she can collect enough residues of Bob's key to derive his private key. Several TLS libraries were found to be vulnerable to this attack.
 - While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange.
 
-### Ephemeral ECDH
+#### Ephemeral ECDH
 
 The public keys are either static (and trusted, say via a certificate) or ephemeral (also known as ECDHE, where final 'E' stands for "ephemeral"). Ephemeral keys are temporary and not necessarily authenticated, so if authentication is desired, authenticity assurances must be obtained by other means. Authentication is necessary to avoid man-in-the-middle attacks. If one of either Alice's or Bob's public keys is static, then man-in-the-middle attacks are thwarted. ***Static public keys provide neither forward secrecy nor key-compromise impersonation resilience, among other advanced security properties.*** Holders of static private keys should validate the other public key, and should apply a secure key derivation function to the raw Diffie–Hellman shared secret to avoid leaking information about the static private key.
 
@@ -56,7 +56,7 @@ The "E" in ECDHE stands for "Ephemeral" and it implies that the keys exchanged a
 ECDHE is used, for example, in TLS, where both the client and the server generate their public-private key pair on the fly, when the connection is established. The keys are then signed with the TLS certificate (for authentication) and exchanged between the parties.
 
 
-### Ephemeral Diffie-Hellman vs static Diffie-Hellman
+#### Ephemeral Diffie-Hellman vs static Diffie-Hellman
 source: https://tls.mbed.org/kb/cryptography/ephemeral-diffie-hellman
 
 Ephemeral Diffie-Hellman (DHE in the context of TLS) differs from the static Diffie-Hellman (DH) in the way that static Diffie-Hellman key exchanges always use the same Diffie-Hellman private keys. So, each time the same parties do a DH key exchange, they end up with the same shared secret.
