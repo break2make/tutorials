@@ -32,6 +32,10 @@ Our elliptic curve algorithms will work in a cyclic subgroup of an elliptic curv
 
 To summarizes, the domain parameters EC algorithms can be represented as 6-tuple *(p, a, b, G, n, h)*, and all these can be public information without any information leakage.
 
+>The public and private keys are generated as follows:
+>- Private key is an integer ***d***, randomly selected in the interval *[1,n-1]*
+>- Public key is curve point ***H = dG***, which is an elliptic curve point multiplication by a scalar.
+
 ### Algorithms
 #### ECDH
 _Source: Wikipedia/ https://andrea.corbellini.name/2015/05/30/elliptic-curve-cryptography-ecdh-and-ecdsa/_
@@ -97,3 +101,7 @@ There are a lot of ciphersuites that support Ephemeral Diffie-Hellman. The key e
 Source: https://andrea.corbellini.name/2015/05/30/elliptic-curve-cryptography-ecdh-and-ecdsa/_
 Read the above link
 
+##### Key and signature-size
+
+- As with elliptic-curve cryptography in general, the bit size of the public key believed to be needed for ECDSA is about ***twice the size of the security level***, in bits. For example, at a security level of 80 bits (meaning an attacker requires a maximum of about 2<sup>80</sup> operations to find the private key) the size of an ECDSA public key would be 160 bits, whereas the size of a DSA public key is at least 1024 bits. 
+- The signature size is the same for both DSA and ECDSA: approximately ***4t*** bits, where ***t*** is the security level measured in bits, that is, about 320 bits for a security level of 80 bits.
