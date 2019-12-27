@@ -26,11 +26,7 @@ _Source: Wikipedia_
 
 Elliptic-curve Diffie–Hellman (ECDH) is a key agreement protocol that allows two parties, each having an elliptic-curve public–private key pair, to establish a shared secret over an _insecure channel_. This shared secret may be directly used as a key, or to derive another key. The key, or the derived key, can then be used to encrypt subsequent communications using a symmetric-key cipher. It is a variant of the Diffie–Hellman protocol using elliptic-curve cryptography.
 
-_Important notes:_
-- If Alice maliciously chooses invalid curve points for her key and Bob does not validate that Alice's points are part of the selected group, she can collect enough residues of Bob's key to derive his private key. Several TLS libraries were found to be vulnerable to this attack.
-- While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange.
-
-_Here's how it works:_
+***Here's how it works:***
 
 ECDH is a variant of the Diffie-Hellman algorithm for elliptic curves. It is actually a key-agreement protocol, more than an encryption algorithm. This basically means that ECDH defines (to some extent) how keys should be generated and exchanged between parties. How to actually encrypt data using such keys is up to us.
 
@@ -44,11 +40,13 @@ The problem it solves is the following: two parties (the usual Alice and Bob) wa
 
 > *S = d<sub>B</sub>H<sub>A</sub> = d<sub>B</sub>(d<sub>A</sub>G) = d<sub>A</sub>(d<sub>B</sub>G) = d<sub>A</sub>H<sub>B</sub>* 
 
-
 The Man In the Middle, however, only knows *H<sub>A</sub>* and *H<sub>B</sub>* (together with the other domain parameters) and would not be able to find out the shared secret *S*. This is known as the Diffie-Hellman problem, which can be stated as follows:
 
 > Given three points *P*, *aP* and *bP*, what is the result of *abP*?
 
+***Important notes:***
+- If Alice maliciously chooses invalid curve points for her key and Bob does not validate that Alice's points are part of the selected group, she can collect enough residues of Bob's key to derive his private key. Several TLS libraries were found to be vulnerable to this attack.
+- While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange.
 
 ### Ephemeral ECDH
 
