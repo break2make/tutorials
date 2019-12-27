@@ -42,12 +42,12 @@ The problem it solves is the following: two parties (the usual Alice and Bob) wa
 
 3. **Alice calculates *S = d<sub>A</sub>H<sub>B</sub>* (using her own private key and Bob's public key), and Bob calculates *S = d<sub>B</sub>H<sub>A</sub>* (using his own private key and Alice's public key).** Note that  *S* is the same for both Alice and Bob, in fact: 
 
--> *S = d<sub>B</sub>H<sub>A</sub> = d<sub>B</sub>(d<sub>A</sub>G) = d<sub>A</sub>(d<sub>B</sub>G) = d<sub>A</sub>H<sub>B</sub>* <-
+> *S = d<sub>B</sub>H<sub>A</sub> = d<sub>B</sub>(d<sub>A</sub>G) = d<sub>A</sub>(d<sub>B</sub>G) = d<sub>A</sub>H<sub>B</sub>* 
 
 
 The Man In the Middle, however, only knows *H<sub>A</sub>* and *H<sub>B</sub>* (together with the other domain parameters) and would not be able to find out the shared secret *S*. This is known as the Diffie-Hellman problem, which can be stated as follows:
 
--> Given three points *P*, *aP* and *bP*, what is the result of *abP*? <-
+> Given three points *P*, *aP* and *bP*, what is the result of *abP*?
 
 
 ### Ephemeral ECDH
