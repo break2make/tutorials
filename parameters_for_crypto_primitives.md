@@ -52,9 +52,8 @@ The problem it solves is the following: two parties (the usual Alice and Bob) wa
 
 2. **Alice and Bob exchange their public keys *H<sub>A</sub>* and *H<sub>B</sub>* over an insecure channel.** The Man In the Middle would intercept these public keys, but won't be able to find out neither *d<sub>A</sub>* nor *d<sub>B</sub>* without solving the discrete logarithm problem.
 
-3. **Alice calculates *S = d<sub>A</sub>H<sub>B</sub>* (using her own private key and Bob's public key), and Bob calculates *S = d<sub>B</sub>H<sub>A</sub>* (using his own private key and Alice's public key).** Note that  *S* is the same for both Alice and Bob, in fact: 
+3. **Alice calculates *S = d<sub>A</sub>H<sub>B</sub>* (using her own private key and Bob's public key), and Bob calculates *S = d<sub>B</sub>H<sub>A</sub>* (using his own private key and Alice's public key).** Note that  *S* is the same for both Alice and Bob, in fact:  *S(y,x) = d<sub>B</sub>H<sub>A</sub> = d<sub>B</sub>(d<sub>A</sub>G) = d<sub>A</sub>(d<sub>B</sub>G) = d<sub>A</sub>H<sub>B</sub>*. The shared secret is *x* (the x coordinate of the point). 
 
-> *S = d<sub>B</sub>H<sub>A</sub> = d<sub>B</sub>(d<sub>A</sub>G) = d<sub>A</sub>(d<sub>B</sub>G) = d<sub>A</sub>H<sub>B</sub>* 
 
 The Man In the Middle, however, only knows *H<sub>A</sub>* and *H<sub>B</sub>* (together with the other domain parameters) and would not be able to find out the shared secret *S*. This is known as the Diffie-Hellman problem, which can be stated as follows:
 
@@ -62,7 +61,7 @@ The Man In the Middle, however, only knows *H<sub>A</sub>* and *H<sub>B</sub>* (
 
 ***Important notes:***
 - If Alice maliciously chooses invalid curve points for her key and Bob does not validate that Alice's points are part of the selected group, she can collect enough residues of Bob's key to derive his private key. Several TLS libraries were found to be vulnerable to this attack.
-- While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange.
+- While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange. Most standardized protocols based on ECDH derive a symmetric key from shared secret using some hash-based key derivation function.
 
 ##### Ephemeral ECDH
 
