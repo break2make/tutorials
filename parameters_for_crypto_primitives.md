@@ -61,7 +61,7 @@ The Man In the Middle, however, only knows *H<sub>A</sub>* and *H<sub>B</sub>* (
 
 ***Important notes:***
 - If Alice maliciously chooses invalid curve points for her key and Bob does not validate that Alice's points are part of the selected group, she can collect enough residues of Bob's key to derive his private key. Several TLS libraries were found to be vulnerable to this attack.
-- While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange. Most standardized protocols based on ECDH derive a symmetric key from shared secret using some hash-based key derivation function.
+- While the shared secret may be used directly as a key, it can be desirable to hash the secret to remove weak bits due to the Diffie–Hellman exchange. ***Most standardized protocols based on ECDH derive a symmetric key from shared secret using some hash-based key derivation function.***
 
 ##### Ephemeral ECDH
 
@@ -103,4 +103,4 @@ Read the above link
 ##### Key and signature-size
 
 - As with elliptic-curve cryptography in general, the bit size of the public key believed to be needed for ECDSA is about ***twice the size of the security level***, in bits. For example, at a security level of 80 bits (meaning an attacker requires a maximum of about 2<sup>80</sup> operations to find the private key) the size of an ECDSA public key would be 160 bits, whereas the size of a DSA public key is at least 1024 bits. 
-- The signature size is the same for both DSA and ECDSA: approximately ***4t*** bits, where ***t*** is the security level measured in bits, that is, about 320 bits for a security level of 80 bits.
+- The signature size is the same for both DSA and ECDSA: approximately ***4t bits, where t is the security level measured in bits***, that is, about 320 bits for a security level of 80 bits.
