@@ -245,6 +245,31 @@ $ openssl ecparam -list_curves
 ```
 To get the NID for these curve, which is required by openssl APIs, check https://github.com/openssl/openssl/blob/master/include/openssl/obj_mac.h
 
+```
+typedef struct ec_key_st EC_KEY;
+```
+Source: https://github.com/enthought/openssl/blob/master/crypto/ec/ec.h
+
+```
+struct ec_key_st {
+	int version;
+
+	EC_GROUP *group;
+
+	EC_POINT *pub_key;
+	BIGNUM	 *priv_key;
+
+	unsigned int enc_flag;
+	point_conversion_form_t conv_form;
+
+	int 	references;
+
+	EC_EXTRA_DATA *method_data;
+} /* EC_KEY */;
+```
+Source: https://github.com/enthought/openssl/blob/master/crypto/ec/ec_lcl.h
+
+
 # Links
 ## Book
 - Network Security with OpenSSL: Cryptography for Secure Communications
