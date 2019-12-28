@@ -143,6 +143,14 @@ To extract the component from SRS structure, follow this link: https://www.opens
 
 # EC
 
+Important links:
+- https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/
+- https://andrea.corbellini.name/2015/06/08/elliptic-curve-cryptography-breaking-security-and-a-comparison-with-rsa/
+- https://www.ucalgary.ca/pst2017/files/pst2017/paper-39.pdf
+- https://www.johndcook.com/blog/2018/08/21/a-tale-of-two-elliptic-curves/
+- https://wiki.openssl.org/index.php/Command_Line_Elliptic_Curve_Operations
+
+
 ```
 $ openssl ecparam -list_curves
   secp112r1 : SECG/WTLS curve over a 112 bit prime field
@@ -234,6 +242,7 @@ $ openssl ecparam -list_curves
   brainpoolP512t1: RFC 5639 curve over a 512 bit prime field
   SM2       : SM2 curve over a 256 bit prime field
 ```
+To get the NID for these curve, which is required by openssl APIs, check https://github.com/openssl/openssl/blob/master/include/openssl/obj_mac.h
 
 # Links
 ## Book
