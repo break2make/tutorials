@@ -149,6 +149,7 @@ Important links:
 - https://www.ucalgary.ca/pst2017/files/pst2017/paper-39.pdf
 - https://www.johndcook.com/blog/2018/08/21/a-tale-of-two-elliptic-curves/
 - https://wiki.openssl.org/index.php/Command_Line_Elliptic_Curve_Operations  (read to know different format of private key)
+- https://www.imsc.res.in/~ecc14/slides/costello.pdf
 
 
 ```
