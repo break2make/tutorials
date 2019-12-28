@@ -6,6 +6,10 @@ https://github.com/drichardson/examples/blob/master/openssl/BigNum/main.c
 
 The PEM functions read or write structures in PEM format. In this sense PEM format is simply base64 encoded data surrounded by header lines. For details about the OpenSSL pem function, read https://www.openssl.org/docs/man1.1.1/man3/PEM_write_PrivateKey.html
 
+There are different types of APIs for read and write from/to a file in PEM format, and those can be grouped based on the following aspects:
+- the keys are written/read from file or bio
+- keys are available as generic EVP_PEKY structure or algorithm specific structure like RSA, EC_KEY, DSA, etc.
+
 # Key management using EVP API
 
 Definition of all structure for evp can be found: https://github.com/openssl/openssl/blob/master/include/crypto/evp.h
