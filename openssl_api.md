@@ -146,7 +146,6 @@ struct rsa_st
 To extract the component from RSA structure, follow this link: https://www.openssl.org/docs/man1.1.1/man3/RSA_get0_e.html
 
 > **2-prime vs Multi-prime.**
->
 RSA_generate_key_ex() generates a 2-prime RSA key pair and stores it in the RSA structure provided in rsa. The pseudo-random number generator must be seeded prior to calling RSA_generate_key_ex().
 >
 >RSA_generate_multi_prime_key() generates a multi-prime RSA key pair and stores it in the RSA structure provided in rsa. The number of primes is given by the primes parameter. The random number generator must be seeded when calling RSA_generate_multi_prime_key().
