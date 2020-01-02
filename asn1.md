@@ -1,11 +1,11 @@
-#Abstract Syntax Notation 1 (ASN.1)
+Abstract Syntax Notation 1 (ASN.1)
 
 
 
 
 
 
-#Important Links
+# Important Links
 - http://luca.ntop.org/Teaching/Appunti/asn1.html (ODI introduction)
 - https://coolaj86.com/articles/asn1-for-dummies/ (Short but useful, sample parsing code is available too)
 - https://www.oss.com/asn1/resources/books-whitepapers-pubs/larmouth-asn1-book.pdf
