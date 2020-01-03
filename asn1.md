@@ -102,7 +102,101 @@ The following are used for version numbers using the ASN.1
 For more information, look into Page 25 in https://tools.ietf.org/html/rfc5911
 
 
+## For envelop
 
+```
+EnvelopedData ::= SEQUENCE {
+      version CMSVersion,
+      originatorInfo [0] IMPLICIT OriginatorInfo OPTIONAL,
+      recipientInfos RecipientInfos,
+      encryptedContentInfo EncryptedContentInfo,
+      ...,
+      [[2: unprotectedAttrs [1] IMPLICIT Attributes
+          {{ UnprotectedAttributes }} OPTIONAL ]] }
+
+  OriginatorInfo ::= SEQUENCE {
+      certs [0] IMPLICIT CertificateSet OPTIONAL,
+      crls [1] IMPLICIT RevocationInfoChoices OPTIONAL }
+
+  RecipientInfos ::= SET SIZE (1..MAX) OF RecipientInfo
+
+  EncryptedContentInfo ::= SEQUENCE {
+      contentType        CONTENT-TYPE.&id({ContentSet}),
+      contentEncryptionAlgorithm ContentEncryptionAlgorithmIdentifier,
+      encryptedContent   [0] IMPLICIT OCTET STRING OPTIONAL }
+
+  -- If you want to do constraints, you might use:
+  -- EncryptedContentInfo ::= SEQUENCE {
+  --  contentType        CONTENT-TYPE.&id({ContentSet}),
+  --  contentEncryptionAlgorithm ContentEncryptionAlgorithmIdentifier,
+  --  encryptedContent   [0] IMPLICIT ENCRYPTED {CONTENT-TYPE.
+  --      &Type({ContentSet}{@contentType}) OPTIONAL }
+  -- ENCRYPTED {ToBeEncrypted} ::= OCTET STRING ( CONSTRAINED BY
+  --        { ToBeEncrypted } )
+
+  UnprotectedAttributes ATTRIBUTE ::=  { ... }
+
+  RecipientInfo ::= CHOICE {
+      ktri           KeyTransRecipientInfo,
+      ...,
+      [[3: kari  [1] KeyAgreeRecipientInfo ]],
+      [[4: kekri [2] KEKRecipientInfo]],
+      [[5: pwri  [3] PasswordRecipientInfo,
+           ori   [4] OtherRecipientInfo ]] }
+
+  EncryptedKey ::= OCTET STRING
+```
+For more information, look into Page 26 in https://tools.ietf.org/html/rfc5911
+
+## For data digest
+```
+DigestedData ::= SEQUENCE {
+      version CMSVersion,
+      digestAlgorithm DigestAlgorithmIdentifier,
+      encapContentInfo EncapsulatedContentInfo,
+      digest Digest, ... }
+
+  Digest ::= OCTET STRING
+```
+
+## For Encrypted data
+
+```
+  EncryptedData ::= SEQUENCE {
+      version CMSVersion,
+      encryptedContentInfo EncryptedContentInfo,
+      ...,
+      [[2: unprotectedAttrs [1] IMPLICIT Attributes
+          {{UnprotectedAttributes}} OPTIONAL ]] }
+```
+
+## For message authentication
+
+```
+AuthenticatedData ::= SEQUENCE {
+      version CMSVersion,
+      originatorInfo [0] IMPLICIT OriginatorInfo OPTIONAL,
+      recipientInfos RecipientInfos,
+      macAlgorithm MessageAuthenticationCodeAlgorithm,
+      digestAlgorithm [1] DigestAlgorithmIdentifier OPTIONAL,
+      encapContentInfo EncapsulatedContentInfo,
+      authAttrs [2] IMPLICIT AuthAttributes OPTIONAL,
+mac MessageAuthenticationCode,
+      unauthAttrs [3] IMPLICIT UnauthAttributes OPTIONAL }
+
+  AuthAttributes ::= SET SIZE (1..MAX) OF Attribute
+      {{AuthAttributeSet}}
+
+  AuthAttributeSet ATTRIBUTE ::= { aa-contentType | aa-messageDigest
+                                       | aa-signingTime, ...}
+  MessageAuthenticationCode ::= OCTET STRING
+
+  UnauthAttributes ::= SET SIZE (1..MAX) OF Attribute
+      {{UnauthAttributeSet}}
+
+  UnauthAttributeSet ATTRIBUTE ::= {...}
+  
+ ```
 
 # Digital Signature
 
