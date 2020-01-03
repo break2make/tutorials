@@ -25,14 +25,6 @@ Abstract Syntax Notation 1 (ASN.1)
 
 # Crytographic Message Syntax using ASN.1
 
-The following are used for version numbers using the ASN.1
-  --   idiom "[[n:"
-  --   Version 1 = PKCS #7
-  --   Version 2 = S/MIME V2
-  --   Version 3 = RFC 2630
-  --   Version 4 = RFC 3369
-  --   Version 5 = RFC 3852
-
 ```
 ContentInfo ::= SEQUENCE {
       contentType        CONTENT-TYPE.
@@ -64,7 +56,10 @@ ContentInfo ::= SEQUENCE {
       eContent           [0] EXPLICIT OCTET STRING
               ( CONTAINING CONTENT-TYPE.
                   &Type({ContentSet}{@eContentType})) OPTIONAL }
+```
+If `eContent` is empty, the file does not contain the signed data. Instead it is having the signature and certificate. This type of signature is called _Detached Signature._
 
+```
   SignerInfo ::= SEQUENCE {
       version CMSVersion,
       sid SignerIdentifier,
@@ -74,7 +69,12 @@ ContentInfo ::= SEQUENCE {
       signature SignatureValue,
       unsignedAttrs [1] IMPLICIT Attributes
           {{UnsignedAttributes}} OPTIONAL }
+```
 
+The signature value resides in `SignerInfo` as `signature SignatureValue`. This value is ASN.1 `OCTECT_STRING`. For RSA, it is a octect string, while for ECDSA, it is octect string over a sequecnce having two integer (as signature in ECDSA is a point).
+
+
+```
   SignedAttributes ::= Attributes {{ SignedAttributesSet }}
 
   SignerIdentifier ::= CHOICE {
@@ -88,6 +88,14 @@ ContentInfo ::= SEQUENCE {
   UnsignedAttributes ATTRIBUTE ::= { aa-countersignature, ... }
   SignatureValue ::= OCTET STRING
 ```
+
+The following are used for version numbers using the ASN.1
+  - idiom "[[n:"
+  - Version 1 = PKCS #7
+  - Version 2 = S/MIME V2
+  - Version 3 = RFC 2630
+  - Version 4 = RFC 3369
+  - Version 5 = RFC 3852
 
 For more information, look into Page 25 in https://tools.ietf.org/html/rfc5911
 
