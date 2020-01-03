@@ -23,7 +23,73 @@ Abstract Syntax Notation 1 (ASN.1)
 
 
 
+# Crytographic Message Syntax using ASN.1
 
+The following are used for version numbers using the ASN.1
+  --   idiom "[[n:"
+  --   Version 1 = PKCS #7
+  --   Version 2 = S/MIME V2
+  --   Version 3 = RFC 2630
+  --   Version 4 = RFC 3369
+  --   Version 5 = RFC 3852
+
+```
+ContentInfo ::= SEQUENCE {
+      contentType        CONTENT-TYPE.
+                      &id({ContentSet}),
+      content            [0] EXPLICIT CONTENT-TYPE.
+                      &Type({ContentSet}{@contentType})}
+
+  ContentSet CONTENT-TYPE ::= {
+      --  Define the set of content types to be recognized.
+      ct-Data | ct-SignedData | ct-EncryptedData | ct-EnvelopedData |
+      ct-AuthenticatedData | ct-DigestedData, ... }
+```
+
+## SignedData for digital signature
+  
+  ```
+  SignedData ::= SEQUENCE {
+      version CMSVersion,
+      digestAlgorithms SET OF DigestAlgorithmIdentifier,
+      encapContentInfo EncapsulatedContentInfo,
+      certificates [0] IMPLICIT CertificateSet OPTIONAL,
+      crls [1] IMPLICIT RevocationInfoChoices OPTIONAL,
+      signerInfos SignerInfos }
+
+  SignerInfos ::= SET OF SignerInfo
+
+  EncapsulatedContentInfo ::= SEQUENCE {
+      eContentType       CONTENT-TYPE.&id({ContentSet}),
+      eContent           [0] EXPLICIT OCTET STRING
+              ( CONTAINING CONTENT-TYPE.
+                  &Type({ContentSet}{@eContentType})) OPTIONAL }
+
+  SignerInfo ::= SEQUENCE {
+      version CMSVersion,
+      sid SignerIdentifier,
+      digestAlgorithm DigestAlgorithmIdentifier,
+      signedAttrs [0] IMPLICIT SignedAttributes OPTIONAL,
+      signatureAlgorithm SignatureAlgorithmIdentifier,
+      signature SignatureValue,
+      unsignedAttrs [1] IMPLICIT Attributes
+          {{UnsignedAttributes}} OPTIONAL }
+
+  SignedAttributes ::= Attributes {{ SignedAttributesSet }}
+
+  SignerIdentifier ::= CHOICE {
+      issuerAndSerialNumber IssuerAndSerialNumber,
+      ...,
+      [[3: subjectKeyIdentifier [0] SubjectKeyIdentifier ]] }
+
+  SignedAttributesSet ATTRIBUTE ::=
+      { aa-signingTime | aa-messageDigest | aa-contentType, ... }
+
+  UnsignedAttributes ATTRIBUTE ::= { aa-countersignature, ... }
+  SignatureValue ::= OCTET STRING
+```
+
+For more information, look into Page 25 in https://tools.ietf.org/html/rfc5911
 
 
 
