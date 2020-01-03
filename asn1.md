@@ -50,14 +50,17 @@ ContentInfo ::= SEQUENCE {
       signerInfos SignerInfos }
 
   SignerInfos ::= SET OF SignerInfo
+```
+Note that the data can be asigned using credential corresponding to different certificates/signers, thus the `SignedData` contains a set of certificate and corresponding signature using `certificates` and `signerInfos`, respectively. There is a one-to-one correspondse between the elements of `certificates` and `signerInfos`.  
 
+```
   EncapsulatedContentInfo ::= SEQUENCE {
       eContentType       CONTENT-TYPE.&id({ContentSet}),
       eContent           [0] EXPLICIT OCTET STRING
               ( CONTAINING CONTENT-TYPE.
                   &Type({ContentSet}{@eContentType})) OPTIONAL }
 ```
-If `eContent` is empty, the file does not contain the signed data. Instead it is having the signature and certificate. This type of signature is called _Detached Signature._
+If `eContent` is empty, the file does not contain the signed data. Instead it is having the signature and certificate. This type of signature is called _Detached Signature._ Most of popular crypto library provides API to check whether the signature is of type attached or detached.
 
 ```
   SignerInfo ::= SEQUENCE {
@@ -72,7 +75,6 @@ If `eContent` is empty, the file does not contain the signed data. Instead it is
 ```
 
 The signature value resides in `SignerInfo` as `signature SignatureValue`. This value is ASN.1 `OCTECT_STRING`. For RSA, it is a octect string, while for ECDSA, it is octect string over a sequecnce having two integer (as signature in ECDSA is a point).
-
 
 ```
   SignedAttributes ::= Attributes {{ SignedAttributesSet }}
