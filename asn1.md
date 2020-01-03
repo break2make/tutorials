@@ -43,9 +43,9 @@ The characteristics of attached digital signatures in PKCS#7 and S/MIME formats 
 
   - Ensures that certificates are encoded in Abstract Syntax Notation One (ASN.1) format, where ASN.1 is an ISO/IEC standard for encoding rules used in ANSI X.509 certificates and PKCS documents.
 
--S/MIME2:
+- S/MIME2:
 
-  -Includes MIME headers and PKCS#7 with the signature attached.
+  - Includes MIME headers and PKCS#7 with the signature attached.
 
 **Detached Signatures**
 The characteristics of detached digital signatures in PKCS#7 and S/MIME formats are as follows:
