@@ -22,6 +22,15 @@ shutil contains high-level Python-specific functions. These are built on top of 
 
 # Threading and multiprocessing
 
+## Important reading
+- https://docs.python.org/2.7/library/multiprocessing.html#all-platforms
+- https://www.journaldev.com/15631/python-multiprocessing-example
+- https://www.tutorialspoint.com/concurrency_in_python/concurrency_in_python_multiprocessing.htm
+- https://www.geeksforgeeks.org/python-different-ways-to-kill-a-thread/
+- https://pymotw.com/2/multiprocessing/basics.html
+- https://www.bogotobogo.com/python/Multithread/python_multithreading_subclassing_creating_threads.php
+- https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python
+
 ## The method join()
 >join([timeout]) Wait until the thread terminates. This blocks the calling thread until the thread whose join() method is called terminates – either normally or through an unhandled exception – or until the optional timeout occurs.
 
