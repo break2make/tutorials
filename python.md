@@ -19,5 +19,48 @@ shutil contains high-level Python-specific functions. These are built on top of 
 # Figlet using python package
 
 
+
+# Threading and multiprocessing
+
+## The method join()
+>join([timeout]) Wait until the thread terminates. This blocks the calling thread until the thread whose join() method is called terminates – either normally or through an unhandled exception – or until the optional timeout occurs.
+
+I found a nice ASCII-art (source: https://stackoverflow.com/questions/15085348/what-is-the-use-of-join-in-python-threading) which explains the behaviours of parent and child in a precise manner. The following text is copied from the source mentioned above.
+
+join-calling should be placed in the track of the main-thread, but to express thread-relation and keep it as simple as possible, I choose to place it in the child-thread instead.
+
+```
+without join:
++---+---+------------------                     main-thread
+    |   |
+    |   +...........                            child-thread(short)
+    +..................................         child-thread(long)
+
+with join
++---+---+------------------***********+###      main-thread
+    |   |                             |
+    |   +...........join()            |         child-thread(short)
+    +......................join()......         child-thread(long)
+
+with join and daemon thread
++-+--+---+------------------***********+###     parent-thread
+  |  |   |                             |
+  |  |   +...........join()            |        child-thread(short)
+  |  +......................join()......        child-thread(long)
+  +,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,     child-thread(long + daemonized)
+
+'-' main-thread/parent-thread/main-program execution
+'.' child-thread execution
+'#' optional parent-thread execution after join()-blocked parent-thread could 
+    continue
+'*' main-thread 'sleeping' in join-method, waiting for child-thread to finish
+',' daemonized thread - 'ignores' lifetime of other threads;
+    terminates when main-programs exits; is normally meant for 
+    join-independent tasks
+So the reason you don't see any changes is because your main-thread does nothing after your join. You could say join is (only) relevant for the execution-flow of the main-thread.
+```
+
+If, for example, you want to concurrently download a bunch of pages to concatenate them into a single large page, you may start concurrent downloads using threads, but need to wait until the last page/thread is finished before you start assembling a single page out of many. That's when you use join().
+
 ## Links
 [1] https://www.devdungeon.com/content/create-ascii-art-text-banners-python
