@@ -22,5 +22,13 @@ The simplest of the things srec_cat can do is convert from one EPROM file format
 
 If supports many features as mentioned in https://linux.die.net/man/1/srec_examples
 
+# Intelhex
+
+- https://github.com/python-intelhex/intelhex
 
 
+# Hex editors
+
+- https://www.poftut.com/best-linux-hex-editors/
+- https://www.ubuntupit.com/best-linux-hex-editor-top-20-linux-hex-viewers-editors/
+- https://stackoverflow.com/questions/5498197/need-a-good-hex-editor-for-linux
