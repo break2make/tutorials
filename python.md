@@ -57,7 +57,6 @@ with join and daemon thread
 ',' daemonized thread - 'ignores' lifetime of other threads;
     terminates when main-programs exits; is normally meant for 
     join-independent tasks
-So the reason you don't see any changes is because your main-thread does nothing after your join. You could say join is (only) relevant for the execution-flow of the main-thread.
 ```
 
 If, for example, you want to concurrently download a bunch of pages to concatenate them into a single large page, you may start concurrent downloads using threads, but need to wait until the last page/thread is finished before you start assembling a single page out of many. That's when you use join().
