@@ -1,8 +1,7 @@
 
 # Objective of (SW/HW) reversing
 
-Read the following links to understand the objectives of revesing:
-- 
+Read the following links to understand the objectives of revesing: 
 
 # Debug symbols
 
