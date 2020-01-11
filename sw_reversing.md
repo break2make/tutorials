@@ -28,7 +28,7 @@ Read the following links to understand the objectives of revesing:
 - https://ieeexplore.ieee.org/abstract/document/7975746
 - https://www.cs.drexel.edu/~spiros/teaching/CS675/slides/intro-binary-reversing.pdf
 - https://link.springer.com/chapter/10.1007/978-3-642-04117-4_31
-
+- https://www.wired.com/2015/02/crypto-trick-makes-software-nearly-impossible-reverse-engineer/
 
 
 ## Debug symbols
