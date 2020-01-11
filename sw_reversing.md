@@ -1,6 +1,6 @@
 # Software Reversing
 
-Three broad objectives of reverengineering are (as mentioned in https://www.thesoftwareguild.com/blog/what-is-reverse-engineering/)
+Three broad objectives of reverengineering are (as mentioned in https://www.thesoftwareguild.com/blog/what-is-reverse-engineering/):
 - **Product and Process Improvement** \
 Many software developers use reverse engineering to improve their own code or to improve interoperability between programs. Many software suites have application programming interfaces (APIs) that allow for interoperability. “But experts say most APIs are so poorly written that third-party software makers have little choice but to reverse-engineer the programs with which they want their software to work opens in new window, just to ensure compatibility,” according to Mathew Schwartz of Computerworld.\
 Schwartz goes on to describe how Cyrix Corp. and Advanced Micro Devices Inc. managed to reverse-engineer Intel’s microprocessors to bring a less expensive, competitive product to market. While operating systems are usually too large and complex to reverse-engineer, “applications are ripe for reverse-engineering.”
