@@ -1,3 +1,6 @@
+**Secure coding** is a coding practice which guides how to avoid the coding flaws that might be exploited by attackers to violet different security goals. Note that there might be different ways to write a secure code, and thus, secure coding guideline usually talks about what to avoid, not how to avoid. _Programming languages provide different libraries for secure code development, which shall be used instead of its insecure variants._
+
+**Secure static code analysis** is a static code analysis technique to ensure the conformance of secure coding rules. This can be done manually or using tools. However, don't believe on the output of signle secure code analysis tool as most of the case, tools report many false positive cases. _If you are a security personnel and supporting a development team, it should be your responsibility to eliminet those false positive cases, and share only the real issues with the development team. Otherwise, the developers will be overwhelmed with the issues which distract their focus and will be less interested in correcting those._  
 
 # Top 10 secure coding practice
 
