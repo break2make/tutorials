@@ -24,6 +24,7 @@ There are two approaches: static and dynamic reverse-engineering methods. A stat
 Read the following links to understand the objectives of revesing: 
 - https://ioactive.com/service/full-stack-security-assessments/reverse-engineering/
 - https://www.thesoftwareguild.com/blog/what-is-reverse-engineering/
+- https://blog.venturepact.com/how-to-reverse-engineer-software/
 - https://teambi0s.gitlab.io/bi0s-wiki/reversing/intro/
 - https://ieeexplore.ieee.org/abstract/document/7975746
 - https://www.cs.drexel.edu/~spiros/teaching/CS675/slides/intro-binary-reversing.pdf
