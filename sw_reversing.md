@@ -1,9 +1,20 @@
+# Software Reversing
 
-# Objective of (SW/HW) reversing
+Objectives of reversing binaries can be one or more the followings:
+- Discover vulnerabilities
+- entify how a process works, such as an authentication method
+- cument existing proprietary network protocols or file formats
+- ther necessary information for other testing techniques, such as fuzzing
+- Trace the use and storage of sensitive information, such as accounts, certificates, encryption keys
+
+There are two approach: static and dynamic reverse-engineering methods. A static reverse engineering comprises of disassembling binaries, reviewing directory structures and files. By contrast, a dynamic reverse engineering is performed while the target is executing. This allows to leverage the target’s runtime behavior during our analysis. The runtime behaviors tell what type of resources are used, such as files, network requests, and shared objects, and allows to trace the execution flow and track the functions that are in use.
 
 Read the following links to understand the objectives of revesing: 
+- https://ioactive.com/service/full-stack-security-assessments/reverse-engineering/
 
-# Debug symbols
+
+
+## Debug symbols
 
 Read the following links:
 - https://en.wikipedia.org/wiki/Debug_symbol
