@@ -2,6 +2,10 @@
 
 **Secure static code analysis** is a static code analysis technique to ensure the conformance of secure coding rules. This can be done manually or using tools. However, don't believe on the output of signle secure code analysis tool as most of the case, tools report many false positive cases. _If you are a security personnel and supporting a development team, it should be your responsibility to eliminet those false positive cases, and share only the real issues with the development team. Otherwise, the developers will be overwhelmed with the issues which distract their focus and will be less interested in correcting those._  
 
+Read the following links for more information:
+- https://www.perforce.com/blog/sca/what-secure-coding
+- https://blog.parasoft.com/a-guide-to-the-jungle-of-secure-coding-standards
+
 # Top 10 secure coding practice
 
 _Source: https://wiki.sei.cmu.edu/confluence/display/seccode/Top+10+Secure+Coding+Practices_
