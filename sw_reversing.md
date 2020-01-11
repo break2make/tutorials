@@ -1,16 +1,33 @@
 # Software Reversing
 
-Objectives of reversing binaries can be one or more the followings:
+Three broad objectives of reverengineering are (as mentioned in https://www.thesoftwareguild.com/blog/what-is-reverse-engineering/)
+- **Product and Process Improvement** \
+Many software developers use reverse engineering to improve their own code or to improve interoperability between programs. Many software suites have application programming interfaces (APIs) that allow for interoperability. “But experts say most APIs are so poorly written that third-party software makers have little choice but to reverse-engineer the programs with which they want their software to work opens in new window, just to ensure compatibility,” according to Mathew Schwartz of Computerworld.\
+Schwartz goes on to describe how Cyrix Corp. and Advanced Micro Devices Inc. managed to reverse-engineer Intel’s microprocessors to bring a less expensive, competitive product to market. While operating systems are usually too large and complex to reverse-engineer, “applications are ripe for reverse-engineering.”
+
+- **Cybersecurity** \
+Reverse-engineering viruses and other malware is common practice for companies that develop security software. According to a study by Zeltser Security Corp, “repeatable forensics steps should assist members of the defense community in developing a structured approach to understanding inner-workings of malicious software opens in new window.” By taking a piece of malware apart and studying it, a cybersecurity company can develop tools to combat the techniques used by malware developers, rather than reactively developing defenses for individual malware programs.\
+Reverse engineering is also used to find security flaws in software, Schwartz says. Though some companies use this to create defenses against such security flaws, hackers who create malicious software can use this process to find gaps in security that they can exploit.
+
+- **Intelligence and Espionage** \
+Cyber warfare is becoming an increasingly important threat to guard against; in 2014 alone, the U.S. government suffered 61,000 cybersecurity breaches opens in new window, according to Time. In fact, the Economic Espionage Act of 1996 specifically addresses reverse engineering opens in new windowand its legality and uses. As countries become more reliant on computer systems for warfare, commerce and more, they become increasingly vulnerable to those who reverse-engineer systems to find security holes to exploit.
+
+Specific to security, objectives of reversing binaries can be one or more the followings:
 - Discover vulnerabilities
 - entify how a process works, such as an authentication method
 - cument existing proprietary network protocols or file formats
 - ther necessary information for other testing techniques, such as fuzzing
 - Trace the use and storage of sensitive information, such as accounts, certificates, encryption keys
 
-There are two approach: static and dynamic reverse-engineering methods. A static reverse engineering comprises of disassembling binaries, reviewing directory structures and files. By contrast, a dynamic reverse engineering is performed while the target is executing. This allows to leverage the target’s runtime behavior during our analysis. The runtime behaviors tell what type of resources are used, such as files, network requests, and shared objects, and allows to trace the execution flow and track the functions that are in use.
+There are two approaches: static and dynamic reverse-engineering methods. A static reverse engineering comprises of disassembling binaries, reviewing directory structures and files. By contrast, a dynamic reverse engineering is performed while the target is executing. This allows to leverage the target’s runtime behavior during our analysis. The runtime behaviors tell what type of resources are used, such as files, network requests, and shared objects, and allows to trace the execution flow and track the functions that are in use.
 
 Read the following links to understand the objectives of revesing: 
 - https://ioactive.com/service/full-stack-security-assessments/reverse-engineering/
+- https://www.thesoftwareguild.com/blog/what-is-reverse-engineering/
+- https://teambi0s.gitlab.io/bi0s-wiki/reversing/intro/
+- https://ieeexplore.ieee.org/abstract/document/7975746
+- https://www.cs.drexel.edu/~spiros/teaching/CS675/slides/intro-binary-reversing.pdf
+- https://link.springer.com/chapter/10.1007/978-3-642-04117-4_31
 
 
 
