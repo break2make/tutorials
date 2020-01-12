@@ -6,7 +6,7 @@
 ## Build uboot for new boards
 
 Important readings:
-- Porting U-Boot and Linux on new ARM boards: a step-by-step guide [[slide](https://elinux.org/images/2/2a/Schulz-how-to-support-new-board-u-boot-linux.pdf)]
+- Porting U-Boot and Linux on new ARM boards: a step-by-step guide [[video](https://www.youtube.com/watch?v=5E0sdYkvq-Q)|[slide](https://elinux.org/images/2/2a/Schulz-how-to-support-new-board-u-boot-linux.pdf)]
 - 
 
 # Device Tree
