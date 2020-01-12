@@ -13,3 +13,17 @@ Important readings:
 
 Important readings:
 - Device Tree for Dummies! - Thomas Petazzoni, Free Electrons [[video](https://www.youtube.com/watch?v=m_NyYEBxfn8)|[slide](https://elinux.org/images/f/f9/Petazzoni-device-tree-dummies_0.pdf)]
+
+# Kernel
+
+# Kernel Data Structure
+
+
+
+# Other resources
+- Exploring Linux Kernel Source Code with Eclipse and QTCreator [[video](https://www.youtube.com/watch?v=0CGRkXIUM-o)]
+- Building the Simplest Possible Linux System [[video](https://www.youtube.com/watch?v=Sk9TatW9ino)]
+- Kernel basics [[video](https://www.youtube.com/watch?v=rTcnTOXf_jM)]
+- Embedded Linux Booting Process (Multi-Stage Bootloaders, Kernel, Filesystem) [[video](https://www.youtube.com/watch?v=DV5S_ZSdK0s)]
+- U-Boot [[link](https://linux-sunxi.org/U-Boot)]
+- Analyzing the Linux boot process [[link](https://opensource.com/article/18/1/analyzing-linux-boot-process)]
