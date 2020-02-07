@@ -1,3 +1,7 @@
+# Parsing ASN file
+
+https://stackoverflow.com/questions/38420344/parsing-asn1-document-with-openssl-c-api
+
 # BN
 https://students.cs.byu.edu/~cs465ta/fall2014/Samples/dh_bignum.htm
 https://github.com/drichardson/examples/blob/master/openssl/BigNum/main.c
