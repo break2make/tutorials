@@ -2,6 +2,12 @@
 
 https://stackoverflow.com/questions/38420344/parsing-asn1-document-with-openssl-c-api
 
+## Extract ECDSA raw bytes from signature
+
+The ECDSA signature is encoded as an ASN.1 structure, which is a SEQUENCE of two INTEGER values. When encoded, the first byte will by 0x30 (which means SEQUENCE), followed by the length, encoded over one or two bytes: if length is n bytes, then it will be encoded as a single byte of value n if n ≤ 127, or two bytes of value 0x81 then n, if 128 ≤ n ≤ 255 (the latter case may happen in case you use a "large" curve like P-521). These n bytes are the concatenation of the two INTEGER values, each with its own tag (a byte of value 0x02), then its length (same encoding; in practice, over a single byte, since it would take a 1000-bit or so curve to need more than one), then the INTEGER value. The value of an INTEGER uses signed big-endian (so you may have a leading byte of value 0x00).
+
+Properly encoding and decoding ASN.1 structures is a difficult art. I don't know if OpenSSL has a public function for that. This function, from another SSL library, converts from ASN.1 to "raw" ECDSA signatures ("raw" means: the two integer values are simply encoded in big-endian and concatenated, both being adjusted to have the same encoding length).
+
 # BN
 https://students.cs.byu.edu/~cs465ta/fall2014/Samples/dh_bignum.htm
 https://github.com/drichardson/examples/blob/master/openssl/BigNum/main.c
