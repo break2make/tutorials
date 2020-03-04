@@ -1,3 +1,58 @@
+# Global Variable
+Source: http://net-informations.com/python/iq/global.htm
+
+A global variable is a variable which is accessible in multiple scopes. In Python, it is better to use a single module to hold all the global variables you want to use and whenever you want to use them, just import this module, and then you can modify that and it will be visible in other modules that do the same.
+
+Create a Global module
+``` 
+#global.py
+current_value=0
+```
+
+Create a Python program file to access global variable
+
+```
+#updater.py
+import global
+def update_value():
+  global.current_value = 100
+```
+
+Create another Python program to test value is changed or not
+
+```
+#display_value.py
+import global
+import updater
+updater.update_value()
+print(global.current_value)
+```
+
+Using global variables in a function
+A global can be accessed by any function , but it can only be modified if you explicitly declare it with the 'global' keyword inside the function. To use global variables inside a function, you need to do global < varName > inside the function. Keep in mind, that you only need to declare them global inside the function if you want to do assignments / change them. global is not needed for printing and accessing.
+
+example
+``` 
+myGlobal = 5
+def func1():
+    myGlobal = 50
+def func2():
+    global myGlobal
+    myGlobal = 50
+def func3():
+    print (myGlobal)
+func1()
+func3()
+print("After using Global")
+func2()
+func3()
+
+output
+ 
+5
+After using Global
+50
+```
 
 
 
