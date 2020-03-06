@@ -1,5 +1,5 @@
 
-# Common side-channel mitigation features present in most of the seure SoC:
+# Common side-channel mitigation features present in most of the secure SoCs:
 
 - Authentication first: The device authenticates the bitstream before decrypting it. Attackers cannot perform differential attacks on the AES encrypted data without breaking authentication.
 - Key update: Limits the amount of encrypted data per key to 1024 bytes.
