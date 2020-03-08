@@ -1,10 +1,10 @@
 
 - Fuzzing
-  - Guided
+  - Guided (e.g. Coverage-guided)
   - Unguided
 - Differential fuzzing
 - Semantic Fuzzig ([Sample paper](https://arxiv.org/pdf/1812.00078.pdf))
-- 
+- Complexity Fuzzing
 
 # Effective and efficient fuzzing
 An effective and efficient fuzzing shall eliminate the following problems:
@@ -16,6 +16,15 @@ An effective and efficient fuzzing shall eliminate the following problems:
 - [CDF – crypto differential fuzzing](https://github.com/kudelskisecurity/cdf)
 - [Ankou](https://github.com/SoftSec-KAIST/Ankou)
 - [cryptofuzz](https://github.com/guidovranken/cryptofuzz)
+
+# Papers
+- [Taming Compiler Fuzzers](http://web.engr.oregonstate.edu/~wongwe/papers/pdf/pldi13.pdf)
+- [Compiler Fuzzing: How Much Does It Matter?](https://srg.doc.ic.ac.uk/files/papers/compilerbugs-oopsla-19.pdf)
+- [Semantic Fuzzing with Zest](https://arxiv.org/pdf/1812.00078.pdf)
+- [Semantic Crash Bucketing](http://www.cs.cmu.edu/~clegoues/docs/vantonder-ase2018.pdf)
+- [Badger: Complexity Analysis with Fuzzing and Symbolic Execution](https://arxiv.org/pdf/1806.03283.pdf)
+- [Singularity: Pattern Fuzzing for Worst Case Complexity](https://www.cs.utexas.edu/~isil/fse18.pdf)
+- [JQF: Coverage-Guided Property-Based Testing in Java](https://people.eecs.berkeley.edu/~rohanpadhye/files/jqf-issta19.pdf)
 
 # Links
 - https://www.f-secure.com/en/consulting/our-thinking/15-minute-guide-to-fuzzing (Very good summary)
