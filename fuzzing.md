@@ -3,6 +3,12 @@
   - Guided
   - Unguided
 - Differential fuzzing
+- Semantic Fuzzig ([Sample paper](https://arxiv.org/pdf/1812.00078.pdf))
+- 
+
+# Effective and efficient fuzzing
+An effective and efficient fuzzing shall eliminate the following problems:
+- hundreds of uniquely reported crashes can still correspond to the same bug
 
 # Open source fuzzing tool
 
