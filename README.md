@@ -6,4 +6,4 @@ eyJoaXN0b3J5IjpbLTcwNDY0NzQ4NF19
 -->
 
 
-[Introduction to Git](/tutorials/git_tutorial.md)
+[Introduction to Git](git_tutorial.md)
