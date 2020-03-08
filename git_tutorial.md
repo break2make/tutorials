@@ -58,5 +58,38 @@ Even if you've established a tracking connection (which you should for most scen
 
 If you want any branch item to be deleted, you need to delete it explicitly.
 
+# Git repository preparation for a simple project
+
+For this project, we assume the following three branch:
+
+Step 1: Create a empty git repo (without README.md)
+
+Step 2: Clone the repository, perform the configuration, push the update to remote and apply the branch permission using the following commands:
+
+## Prepare a git repository for a new project
+
+```
+git clone REPO
+cd REPO
+```
+Now, create a readme file, and push it in remote branch:     
+
+```
+touch README.md
+git add --all
+git commint -m "Initial Commit"
+git push -u origin master
+```
+Let's assume that `master` branch will contains of the released code, while development will happend in `dev` branch and tested code will be merged into `dev-tested` branch. During release, the `dev-tested` branch needs to be merged with release tag. This git project flow can be achieved using the following commands:
+```
+git checkout -b dev
+git push -u origin dev
+git checkout -b dev-tested
+git push -u origin dev-tested
+```
+Note that it is also possible to push all branches together using `git push -u origin --all`.
+
+
 # Links
-- [15-tips-to-enhance-your-github-flow](https://hackernoon.com/15-tips-to-enhance-your-github-flow-6af7ceb0d8a3)
+- [15 tips to enhance your github flow](https://hackernoon.com/15-tips-to-enhance-your-github-flow-6af7ceb0d8a3)
+- [Github git cheat sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
