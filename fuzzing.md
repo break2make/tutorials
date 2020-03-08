@@ -25,6 +25,7 @@ An effective and efficient fuzzing shall eliminate the following problems:
 - [Badger: Complexity Analysis with Fuzzing and Symbolic Execution](https://arxiv.org/pdf/1806.03283.pdf)
 - [Singularity: Pattern Fuzzing for Worst Case Complexity](https://www.cs.utexas.edu/~isil/fse18.pdf)
 - [JQF: Coverage-Guided Property-Based Testing in Java](https://people.eecs.berkeley.edu/~rohanpadhye/files/jqf-issta19.pdf)
+- [RFUZZ: Coverage-Directed Fuzz Testing of RTL on FPGAs](https://people.eecs.berkeley.edu/~ksen/papers/rfuzz.pdf)
 
 # Links
 - https://www.f-secure.com/en/consulting/our-thinking/15-minute-guide-to-fuzzing (Very good summary)
