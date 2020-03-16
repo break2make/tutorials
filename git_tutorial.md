@@ -3,6 +3,20 @@ Please check the following liks:
 - [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 - [Git Merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 
+Quick steps to be executed before merging `branch-X` into `branch-Y`:
+1. Goto `brnach-Y`
+    ```
+    git checkout branch-Y
+    ```
+1. Update `branch-Y` if remote branch is updated in-between by someone else
+    ```
+    git pull
+    ```
+1. Merge `branch-X` into `branch-Y`
+    ```
+    git merge branch-X
+    ```
+
 # Rewriting the most recent commit message
 You can change the most recent commit message using the following command:
 ```
