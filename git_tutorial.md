@@ -1,3 +1,6 @@
+# Git Merge
+Please check this [link](Git Branching - Basic Branching and Merging).
+
 # Rewriting the most recent commit message
 You can change the most recent commit message using the following command:
 ```
