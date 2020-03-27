@@ -27,8 +27,15 @@ Security requirements for cryptographic modules are specified in [FIPS 140-2][fi
 # HSM Chip Vendors
 
 
-# HSM for Could-hosted Applications 
+# Cloud HSM - HSM for Could-hosted Applications 
 
+Cloud HSM is a cloud-hosted hardware security module (HSM) service on a Cloud Platform. With Cloud HSM, you can host encryption keys and perform cryptographic operations. With this fully managed service, you can protect your most sensitive workloads without the need to worry about the operational overhead of managing an HSM cluster. A few well-known cloud HSM services are [Google Cloud HSM][google-cloudhsm] and [AWS Cloud HSM][aws-cloudhsm].
+
+For details about AWS cloud HSM, please read the [reference documents][aws-cloudhsm-doc].
+
+[google-cloudhsm]: https://cloud.google.com/hsm
+[aws-cloudhsm]: https://aws.amazon.com/cloudhsm/
+[aws-cloudhsm-doc]: https://docs.aws.amazon.com/cloudhsm/?id=docs_gateway
 
 # References
 
