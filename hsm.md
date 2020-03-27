@@ -15,7 +15,7 @@ By trusted, it is expected that HSM shall be free from “no viruses, no malware
 > To prevent scenarios like this, it is required to separate the operations into two different areas. One for the business logic and one for cryptography. You then need to entrust the cryptographic operation to a trusted element, for example an HSM. ([source][blog-hsm-attributes])
 
 # EVITA HSM Specification for Automotive
-TODO
+
 
 # HSM Certification
 
@@ -34,7 +34,6 @@ Cloud HSM is a cloud-hosted hardware security module (HSM) service on a Cloud Pl
 
 Fore more detils on cloud HSM, go through the following resource:
 - [AWS Cloud HSM Reference Documents][aws-cloudhsm-doc]
--
 - [Choosing the Right Cloud HSM][cloudhsm-blog-1]
 
 [google-cloudhsm]: https://cloud.google.com/hsm
