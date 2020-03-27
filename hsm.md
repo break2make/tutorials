@@ -15,16 +15,17 @@ By trusted, it is expected that HSM shall be free from “no viruses, no malware
 > To prevent scenarios like this, it is required to separate the operations into two different areas. One for the business logic and one for cryptography. You then need to entrust the cryptographic operation to a trusted element, for example an HSM. ([source][blog-hsm-attributes])
 
 # EVITA HSM Specification for Automotive
-
+TODO
 
 # HSM Certification
 
 Security requirements for cryptographic modules are specified in [FIPS 140-2][fips-140-2]. There are four different levels (Level-1 to Level-4) are defined to classify the crypto graphic modules based on their implemented features. For more details for each of the level, read [FIPS 140-2][fips-140-2].
 
-# HSM Interfaces
+<!--- # HSM Interfaces --->
 
-
+<!--- 
 # HSM Chip Vendors
+--->
 
 
 # Cloud HSM - HSM for Could-hosted Applications 
