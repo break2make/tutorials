@@ -56,6 +56,9 @@ https://help.github.com/en/github/committing-changes-to-your-project/changing-a-
 
 # Delete git branch
 This section is wrriten based on https://www.git-tower.com/learn/git/faq/delete-remote-branch
+
+> You cannot delete the present branch (say `branch-x`). You need to checkout to another branch (say `master` branch), to delete the `branch-x`. 
+
 # Deleting local branches in Git
 ```
 $ git branch -d LOCAL-BRANCH-NAME
