@@ -7,5 +7,5 @@ eyJoaXN0b3J5IjpbLTcwNDY0NzQ4NF19
 
 
 [Introduction to Git](git_tutorial.md)
-
 [Security Patterns](security_patterns.md)
+[OS Hardening](os_hardening.md)
