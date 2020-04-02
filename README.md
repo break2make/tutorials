@@ -11,3 +11,6 @@ eyJoaXN0b3J5IjpbLTcwNDY0NzQ4NF19
 [Security Patterns](security_patterns.md)
 
 [Security Standars and Guidelines](security_standars_guidelines.md)
+
+[OS Hardening](os_hardening.md)
+
