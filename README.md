@@ -9,3 +9,5 @@ eyJoaXN0b3J5IjpbLTcwNDY0NzQ4NF19
 [Introduction to Git](git_tutorial.md)
 
 [Security Patterns](security_patterns.md)
+
+[Security Standars and Guidelines](security_standars_guidelines.md)
