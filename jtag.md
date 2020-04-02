@@ -45,3 +45,4 @@ security at the hardware and software levels as mentioned [here][jtag-sec].
 - [JTAG Technical Primer](https://www.corelis.com/education/tutorials/jtag-tutorial/jtag-technical-primer/)
 - [JTAG TAP Controller Tutorial (video)](https://www.youtube.com/watch?v=PhaqHKyAvR4)
 - [EEVblog #499 - What is JTAG and Boundary Scan? (video)](https://www.youtube.com/watch?v=TlWlLeC5BUs&t=1547s)
+- [JTAG | IJTAG Semiconductor and Board Test Security](https://www.asset-intertech.com/eresources/jtag-ijtag-semiconductor-and-board-test-security)
