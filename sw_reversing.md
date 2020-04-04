@@ -70,3 +70,5 @@ If supports many features as mentioned in https://linux.die.net/man/1/srec_examp
 - https://www.poftut.com/best-linux-hex-editors/
 - https://www.ubuntupit.com/best-linux-hex-editor-top-20-linux-hex-viewers-editors/
 - https://stackoverflow.com/questions/5498197/need-a-good-hex-editor-for-linux
+
+### ptrace

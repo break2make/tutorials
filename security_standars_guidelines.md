@@ -1,4 +1,69 @@
 
+# Protection Profiles
+
+According to [Wikipedia](https://en.wikipedia.org/wiki/Protection_Profile):
+>A Protection Profile (PP) is a document used as part of the certification process according to ISO/IEC 15408 and the Common Criteria (CC). As the generic form of a Security Target (ST), it is typically created by a user or user community and provides an implementation independent specification of information assurance security requirements. A PP is a combination of threats, security objectives, assumptions, security functional requirements (SFRs), security assurance requirements (SARs) and rationales.
+>
+>A PP specifies generic security evaluation criteria to substantiate vendors' claims of a given family of information system products. Among others, it typically specifies the Evaluation Assurance Level (EAL), a number 1 through 7, indicating the depth and rigor of the security evaluation, usually in the form of supporting documentation and testing, that a product meets the security requirements specified in the PP.
+
+
+## Common Criteria Protection Profiles
+
+As a part of Common Criteria, there are many [protection profiles](https://www.commoncriteriaportal.org/pps/) for the following aspects of a system:
+- Access Control Devices and Systems
+- Biometric Systems and Devices
+- Boundary Protection Devices and Systems
+- Data Protection
+    - Firewall Protection Profile
+- Databases
+- ICs, Smart Cards and Smart Card-Related Devices and Systems
+- Key Management Systems
+    - Certificate Issuing and Management Components Protection Profile 
+- Mobility
+- Multi-Function Devices
+- Network and Network-Related Devices and Systems
+- Operating Systems
+    - Protection Profile for General Purpose Operating Systems, Version 4.2.1
+    - Operating System Protection Profile, Version 2.0
+- Other Devices and Systems
+- Products for Digital Signatures
+- Trusted Computing
+
+Understanding of these protection profiles help to make a system secure. 
+> Operating System Protection profile is important for securing OS and its auidt.
+
+## Resources
+- https://www.commoncriteriaportal.org/pps/
+- https://www.niap-ccevs.org/Profile/PP.cfm
+- https://www.sogis.eu/uk/pp_en.html
+- https://public.cyber.mil/stigs/niap/
+- https://www.sciencedirect.com/topics/computer-science/protection-profile
+
+
+# OpenSCAP Security Guide
+The SCAP Security Guide Project: https://www.open-scap.org/security-policies/scap-security-guide.
+This guide presents a catalog of security-relevant configuration settings for `Red Hat Enterprise Linux 8` using the following profiles:
+- Criminal Justice Information Services (CJIS) Security Policy
+- Unclassified Information in Non-federal Information Systems and Organizations (NIST 800-171)
+- Australian Cyber Security Centre (ACSC) Essential Eight
+- Health Insurance Portability and Accountability Act (HIPAA)
+- Protection Profile for General Purpose Operating Systems
+- Protection Profile for Virtualization (VPP) v. 1.0
+- DISA STIG for Red Hat Enterprise Linux Virtualization Host (RHELH)
+- PCI-DSS v3.2.1 Control Baseline
+- Red Hat Corporate Profile for Certified Cloud Providers (RH CCP)
+- Standard System Security Profile for Red Hat Enterprise Linux 8
+-  DISA STIG for Red Hat Enterprise Linux 8
+
+> Although most of the profiles are applicable for [Linux OS distributions][static-open-scap], it can also be used for Unix-like OS with certain modifications.
+
+
+[static-open-scap]: https://static.open-scap.org/
+## Resources
+- https://static.open-scap.org/
+- https://nvd.nist.gov/ncp/checklist/909/download/5619
+- https://nvd.nist.gov/ncp/repository
+
 # SAE International
 It is previously known as the Society of Automotive Engineers. Website: https://www.sae.org/\
 All SAE publication can be found in [SAE Mobilus](https://saemobilus.sae.org/).
