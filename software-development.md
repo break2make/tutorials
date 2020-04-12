@@ -26,6 +26,8 @@ The agility, reuse, and transparency benefits of a service are just too hard to 
 - When you’re building an application that will be deployed to a device with inconsistent network access (making remote service consumption unreliable)
 - When you’re building an application that will be hardened with wrapper technology for security reasons (and network access to remote services is seen as an unacceptable compromise)
 
+For a detailed comparion between library and services, check this [link][lib-service].
+
 ## Library & Frameworks: its a matter of control
 
 As explined by Daniele Margutti in his [post][lib-framewrok-iquii]:
@@ -51,7 +53,10 @@ An API exactly defines the methods for one software program to interact with the
 
 [lib-framewrok-iquii]: https://medium.com/iquii/applications-vs-frameworks-vs-libraries-c1f1a6122711
 
+[lib-service]: https://blogs.gartner.com/eric-knipp/2013/03/20/libraries-vs-services/
+
 ## Important Resources
+- [Libraries vs. Services][lib-service]
 - [Applications vs Frameworks vs Libraries][lib-framewrok-iquii]
 - [Framework vs Library vs Platform vs API vs SDK vs Toolkits vs IDE](https://medium.com/@programmerasi/difference-between-api-and-web-service-73c873573c9d)
 - [Web Service vs. Shared Library
