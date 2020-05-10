@@ -1,3 +1,12 @@
+The Secure Hash Algorithms are a family of cryptographic hash functions published by the National Institute of Standards and Technology (NIST) as a U.S. Federal Information Processing Standard (FIPS).
+
+| Algorithms | Variants | Output Size (bits) | Internal State Size (bits) | Block Size (bits) | Rounds|
+|------------|----------|----------|----------------------------|-------------------|--------|
+|SHA-0/1 | - | 160 | 160 (5 x 32) | 512 | 80 |
+|SHA2| | | | | |
+
+
+
 
 # SHA-256
 A detailed explanation of SHA-256 can be found [here][sha256-detailed].
