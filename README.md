@@ -14,3 +14,5 @@ eyJoaXN0b3J5IjpbLTcwNDY0NzQ4NF19
 
 [OS Hardening](os_hardening.md)
 
+[Hash Functions](hash.md)
+
