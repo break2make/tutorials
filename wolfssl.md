@@ -8,3 +8,5 @@ Steps of init-update-final model for hash functions are given below:
 - **Update.** Append the input data into internal buffer which is empty initially. If the buffer has data chuncks whose size equal to block size of hash function, the it is processed in this step. Rest of the tail-end data bytes are kept in the buffer.
 - **Final.** In this step rest of buffer data, which are not processed in update step, are processed along with alogorithm specific paadded bytes.
 
+# Linux Kernel Crypto API
+https://kernel.readthedocs.io/en/sphinx-samples/crypto-API.html
