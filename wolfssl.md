@@ -1,7 +1,7 @@
 
 # Init-Update-Final Transformation Model
 
-This model is used for implementation of crupto functions that accepts arbitrary large inputs in an interative way. For embedded device with low momery footprint, it is not feasible to load the entire input data into RAM to process together. In this context, the init-update-final approach is used. This approach is followed in various crypto libraries like OpenSSL and Wolfssl. 
+This model is used for implementation of crupto functions that accepts arbitrary large inputs in an interative way. For embedded device with low momery footprint, it is not feasible to load the entire input data into RAM to process together. In this context, the init-update-final approach is very useful. Init-update-final approach is used in implementation of various crypto libraries like OpenSSL and Wolfssl. 
 
 Steps of init-update-final model for hash functions are given below:
 - **Init.** Create an context of crypto module and initialize its parameters.
