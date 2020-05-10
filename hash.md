@@ -15,7 +15,7 @@ The *Secure Hash Algorithms* are a family of cryptographic hash functions publis
 |SHA3| SHA3-384 | 384| 1600 (5x5x64)| 832| 24|
 |SHA3| SHA3-512 | 512| 1600 (5x5x64)| 576| 24|
 
-For more details, check [here][].
+For more details, check [here][sha-wiki].
 
 ## SHA-256
 A detailed explanation of SHA-256 can be found [here][sha256-detailed].
