@@ -1,5 +1,5 @@
 
-# Microchip Dev Boards
+# Microchip
 
 A list of crypto chips and related boards can be found [here](https://www.microchip.com/design-centers/security-ics/trust-platform).
 
