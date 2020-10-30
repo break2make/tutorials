@@ -33,7 +33,22 @@ Automotive software and its tool-chain. For details, check [here](https://github
 ### Erika Enterprise RTOS
 Erika Enterprise is a royalty free automotive OSEK/VDX certified Hard Real Time Operating System (RTOS). For more details, check [here](http://erika-enterprise.com/).
 
+### SDVOS
+
+SDVOS supports the standard OSEK OS interface. Some AUTOSAR OS extensions such as schedule tables and software timers are also available. To get started, take a look at the tutorials and documentations. For more details, check [here](http://www.sdvos.org/)
+
+### donkeycar
+
+An opensource DIY self driving platform for small scale cars. [Link](https://www.donkeycar.com/) | [Blog](https://opensource.com/article/18/6/galecino-car)
+
+
 ## Papers and Thesis
 
 - Virtual AUTOSAR Environment on Linux. [source](http://publications.lib.chalmers.se/records/fulltext/238391/238391.pdf)
-- 
+- VSOMEIP - OPC UA Gateway Solution for the Automotive Industry. [Link](https://ieeexplore.ieee.org/abstract/document/8792619) 
+
+
+## Other useful resource
+
+- https://opensource.com/tags/automotive
+
