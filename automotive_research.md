@@ -3,7 +3,9 @@
 
 
 
-## Open Source Projects:
+## Open Source Projects
+
+We have listed few open source projects to learn automotiv.
 
 ### CARLA
 Open-source simulator for autonomous driving research [Link](https://carla.org/)
@@ -25,3 +27,10 @@ The vsomeip stack implements the http://some-ip.com/ (Scalable service-Oriented 
 
 Ain Shams University Open Source Implementation of the AUTOSAR Standard. [more](https://github.com/asusar/communication-stack)
 
+### as
+Automotive software and its tool-chain. For details, check [here](https://github.com/autoas/as).
+
+## Papers and Thesis
+
+- Virtual AUTOSAR Environment on Linux. [source](http://publications.lib.chalmers.se/records/fulltext/238391/238391.pdf)
+- 
