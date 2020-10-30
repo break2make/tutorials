@@ -41,12 +41,21 @@ SDVOS supports the standard OSEK OS interface. Some AUTOSAR OS extensions such a
 
 An opensource DIY self driving platform for small scale cars. [Link](https://www.donkeycar.com/) | [Blog](https://opensource.com/article/18/6/galecino-car)
 
+### OpenXC
+
+OpenXC™ is a combination of open source hardware and software that lets you extend your vehicle with custom applications and pluggable modules. It uses standard, well-known tools to open up a wealth of data from the vehicle to developers, even beyond OBD-II. For more details, check [here](http://openxcplatform.com/).
+
+### MOPED
+https://antmicro.com/blog/2016/02/tx1-vs-tk1/
+
 
 ## Papers and Thesis
 
 - Virtual AUTOSAR Environment on Linux. [source](http://publications.lib.chalmers.se/records/fulltext/238391/238391.pdf)
 - VSOMEIP - OPC UA Gateway Solution for the Automotive Industry. [Link](https://ieeexplore.ieee.org/abstract/document/8792619) 
-
+- VENTOS: Vehicular Network Open Simulator with Hardware-in-the-Loop Support. 
+- Open Source Model and Simulator for Real-Time Performance Analysis of Automotive Network Security
+- 
 
 ## Other useful resource
 
