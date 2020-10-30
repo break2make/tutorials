@@ -30,6 +30,9 @@ Ain Shams University Open Source Implementation of the AUTOSAR Standard. [more](
 ### as
 Automotive software and its tool-chain. For details, check [here](https://github.com/autoas/as).
 
+### Erika Enterprise RTOS
+Erika Enterprise is a royalty free automotive OSEK/VDX certified Hard Real Time Operating System (RTOS). For more details, check [here](http://erika-enterprise.com/).
+
 ## Papers and Thesis
 
 - Virtual AUTOSAR Environment on Linux. [source](http://publications.lib.chalmers.se/records/fulltext/238391/238391.pdf)
