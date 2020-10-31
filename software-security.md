@@ -1,6 +1,13 @@
 # Software Security
 
-In this tutorial, we discuss various software security topics.
+In this tutorial, we discuss various software security topics like:
+
+- Cotext switching
+- Interrupt handeling
+- Partition of virtual and physical address space
+- Access control
+- Priviledge levels
+- In-process memory isolation
 
 
 ## Papers
