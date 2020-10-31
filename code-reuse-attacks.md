@@ -20,6 +20,7 @@ Read the following resources:
 
 ### Book
 - Learning Linux Binary Analysis
+- PRACTICAL BINARY ANALYSIS - Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly. [Link](https://ihatefeds.com/No.Starch.Practical.Binary.Analysis.2018.pdf)
 
 ## Reverse Engineering Go Binaries
 - Reverse Engineering Go Binaries with Ghidra. [Link](https://cujo.com/reverse-engineering-go-binaries-with-ghidra/)
