@@ -9,6 +9,8 @@ In this tutorial, we discuss various software security topics.
 - BinRec: Dynamic Binary Lifting and Recompilation
 
 
+## Related Papers (not directly relevant to software security)
+- KalKi: A Software-Defined IoT Security Platform
 
 ## Researchers
 - Vasileios P. Kemerlis. [Profile](https://cs.brown.edu/~vpk/) | [Google Scholar](https://scholar.google.com/citations?hl=en&user=tkb2YWQAAAAJ&view_op=list_works&sortby=pubdate)
