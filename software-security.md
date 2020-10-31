@@ -7,10 +7,18 @@ In this tutorial, we discuss various software security topics.
 
 ### 2020
 - BinRec: Dynamic Binary Lifting and Recompilation
+- Donky: Domain Keys – Efficient In-Process Isolation for RISC-V and x86
+- On Runtime Software Security of TrustZone-M based IoT Devices
+- RedLeaf: Isolation and Communication in a Safe Operating System
+- IMIX: In-Process Memory Isolation EXtension
+- ERIM: Secure, Efficient In-process Isolation with Protection Keys (MPK)
+- Lord of the x86 Rings: A Portable User Mode Privilege Separation Architecture on x86
+
 
 
 ## Related Papers (not directly relevant to software security)
 - KalKi: A Software-Defined IoT Security Platform
+- AMADEUS: Towards the AutoMAteD secUrity teSting
 
 ## Researchers
 - Vasileios P. Kemerlis. [Profile](https://cs.brown.edu/~vpk/) | [Google Scholar](https://scholar.google.com/citations?hl=en&user=tkb2YWQAAAAJ&view_op=list_works&sortby=pubdate)
