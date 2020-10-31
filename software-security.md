@@ -2,12 +2,22 @@
 
 In this tutorial, we discuss various software security topics like:
 
+- Memory corruptions
+  - Types: code-injection, code-reuse, and data-only attacks
+  - Counter measures: control-flow integrity (CFI), code-pointer integrity (CPI), and fine grained code randomization
 - Cotext switching
 - Interrupt handeling
 - Partition of virtual and physical address space
 - Access control
 - Priviledge levels
 - In-process memory isolation
+
+Hardware-assisted software security:
+- Memory protection unit
+- Memory management unit
+- SGX
+- ARM trustzone
+- ARM exception levels
 
 
 ## Papers
