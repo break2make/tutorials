@@ -9,6 +9,18 @@
 
 - TARA+: Controllability-aware Threat Analysis and Risk Assessment for L3 Automated Driving Systems
 - An Asset to Security Modeling? Analyzing Stakeholder Collaborations Instead of Threats to Assets
+- Threat Modeling for Automotive Security Analysis
+
+
+## Other Resources
+
+- https://medium.com/@informationsecurity/microsoft-threat-modeling-tools-logic-28ea9dd3b18d
+
+## Tools
+- https://github.com/OVVL-HSO/OVVL-Webapp
+  - Thesis: https://opus.hs-offenburg.de/frontdoor/deliver/index/docId/3339/file/Bachelorthesis_Tobias_Reski_18.02.2019.pdf
+- https://github.com/OVVL-HSO/OVVL-Server
+- Microsoft Threat Modeling Tool 2016
 
 
 # Risk Assessment
