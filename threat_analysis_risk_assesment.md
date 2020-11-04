@@ -10,6 +10,8 @@
 - TARA+: Controllability-aware Threat Analysis and Risk Assessment for L3 Automated Driving Systems
 - An Asset to Security Modeling? Analyzing Stakeholder Collaborations Instead of Threats to Assets
 - Threat Modeling for Automotive Security Analysis
+- Risk-Oriented Security Engineering (Interesting reading. well-written)
+- Combined automotive safety and security pattern engineering approach (Interesting reading)
 
 
 ## Other Resources
