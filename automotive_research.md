@@ -4,6 +4,9 @@ For automotive security basics, chek:
 - A Multilayer Secure Framework for Vehicular Systems. [Link](https://publikationsserver.tu-braunschweig.de/servlets/MCRFileNodeServlet/dbbs_derivate_00047412/Diss_Hamad_Mohammad.pdf)
 - AUTOSAR Embedded Security in Vehicles
 
+## Interesting Papers
+- Embedded Policing and Policy Enforcement based Security in the era of Digital-Physical Convergence for Next-Generation Vehicular Electronics
+
 
 ## Open Source Projects
 
