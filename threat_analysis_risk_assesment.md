@@ -1,3 +1,9 @@
+# Security
+
+Few interesting articles:
+- Hardware and Security: Vulnerabilities and Solutions - https://www2.seas.gwu.edu/~simha/research/HWSecBookChapter12.pdf
+  Note: this article discuss about to secure a hardware and hardware for software security
+
 
 # Threat Analysis
 
@@ -17,6 +23,8 @@
 ## Other Resources
 
 - https://medium.com/@informationsecurity/microsoft-threat-modeling-tools-logic-28ea9dd3b18d
+- Threat modeling for drivers - https://docs.microsoft.com/en-us/windows-hardware/drivers/driversecurity/threat-modeling-for-drivers
+  **Note:** It has used STRDIE model, and this can be used an example for understnading the STRIDE threat modeling. 
 
 ## Tools
 - https://github.com/OVVL-HSO/OVVL-Webapp
