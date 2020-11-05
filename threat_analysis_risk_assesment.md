@@ -3,11 +3,12 @@
 Few interesting articles:
 - Hardware and Security: Vulnerabilities and Solutions - https://www2.seas.gwu.edu/~simha/research/HWSecBookChapter12.pdf
   Note: this article discuss about to secure a hardware and hardware for software security
+- https://www.cybok.org/media/downloads/Hardware_Security_KA_-_draft_for_review_August_2019.pdf
 
 
-# Threat Analysis
+## Threat Analysis
 
-## Book
+### Book
 - Threat Modeling Designing for Security by Adam Shostack. [source](https://moodle.ufsc.br/pluginfile.php/2377555/mod_resource/content/2/Threat%20Modeling.pdf)
 
 
@@ -20,20 +21,20 @@ Few interesting articles:
 - Combined automotive safety and security pattern engineering approach (Interesting reading)
 
 
-## Other Resources
+### Other Resources
 
 - https://medium.com/@informationsecurity/microsoft-threat-modeling-tools-logic-28ea9dd3b18d
 - Threat modeling for drivers - https://docs.microsoft.com/en-us/windows-hardware/drivers/driversecurity/threat-modeling-for-drivers
   **Note:** It has used STRDIE model, and this can be used an example for understnading the STRIDE threat modeling. 
 
-## Tools
+### Tools
 - https://github.com/OVVL-HSO/OVVL-Webapp
   - Thesis: https://opus.hs-offenburg.de/frontdoor/deliver/index/docId/3339/file/Bachelorthesis_Tobias_Reski_18.02.2019.pdf
 - https://github.com/OVVL-HSO/OVVL-Server
 - Microsoft Threat Modeling Tool 2016
 
 
-# Risk Assessment
+## Risk Assessment
 
 Detailed listing of various risk analysis technique can be found [here](https://www.nr.no/~abie/RiskAnalysis.htm).
 
@@ -42,10 +43,10 @@ Risk Analysis Steps:
 - Risk Evaluation
 - Risk Treatment
 
-## Tools
+### Tools
 - securiCAD - https://community.securicad.com/
 
-## Papers
+### Papers
 - SAHARA: A Security-Aware Hazard and Risk Analysis Method
 - Integrated Safety and Security Risk Assessment Methods: A Survey of Key Characteristics and Applications (has provided a comparison of various techniques)
 - https://www.itgovernance.co.uk/blog/7-steps-to-a-successful-iso-27001-risk-assessment
@@ -53,4 +54,10 @@ Risk Analysis Steps:
 - https://advisera.com/27001academy/blog/2016/05/16/4-mitigation-options-risk-treatment-according-iso-27001/
 - https://advisera.com/27001academy/knowledgebase/threats-vulnerabilities/
 
+## OPerating System Security
 
+### Linux Security
+
+- https://people.eecs.ku.edu/~saiedian/710/Lectures/Readings/12-linux-security.pdf (Lecture Notes)
+- OS-level Attacks and Defenses: From Software to Hardware. (Thesis)
+  https://tuprints.ulb.tu-darmstadt.de/8482/1/gens_diss.pdf
