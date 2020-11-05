@@ -75,3 +75,7 @@ Risk Analysis Steps:
 - [Measuring a System’s Attack Surface.](https://www.cs.cmu.edu/~wing/publications/tr04-102.pdf). Note: Read this to understand the attack surfaces in Linux OS. It has also listed various resource in Linux OS.
 - [Clear Linux.](https://docs.01.org/clearlinux/latest/guides/index.html#clear-linux). Note: This is a great resource.
 
+## Application Security
+
+- [7 must-dos for delivering app-focused security](https://techbeacon.com/security/7-must-dos-delivering-app-focused-security)
+
