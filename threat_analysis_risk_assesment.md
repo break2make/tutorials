@@ -58,12 +58,11 @@ Risk Analysis Steps:
 
 ### Linux Security
 
-- https://people.eecs.ku.edu/~saiedian/710/Lectures/Readings/12-linux-security.pdf (Lecture Notes)
-- OS-level Attacks and Defenses: From Software to Hardware. (Thesis)
-  https://tuprints.ulb.tu-darmstadt.de/8482/1/gens_diss.pdf
-- LINUX AND HYPERVISOR HARDENING — APPLYING A SECURE BY DESIGN PHILOSOPHY. [Blog](https://www.starlab.io/blog/linux-and-hypervisor-hardening-applying-a-secure-by-design-philosophy)
-- WINDOWS AND LINUX OPERATING SYSTEMS FROM A SECURITY PERSPECTIVE. [Link](https://arxiv.org/ftp/arxiv/papers/1204/1204.0197.pdf)
+- [Linux Security](https://people.eecs.ku.edu/~saiedian/710/Lectures/Readings/12-linux-security.pdf) Lecture Notes
+- [OS-level Attacks and Defenses: From Software to Hardware.](https://tuprints.ulb.tu-darmstadt.de/8482/1/gens_diss.pdf)
+- [LINUX AND HYPERVISOR HARDENING — APPLYING A SECURE BY DESIGN PHILOSOPHY.](https://www.starlab.io/blog/linux-and-hypervisor-hardening-applying-a-secure-by-design-philosophy)
+- [WINDOWS AND LINUX OPERATING SYSTEMS FROM A SECURITY PERSPECTIVE.](https://arxiv.org/ftp/arxiv/papers/1204/1204.0197.pdf)
 - Automating threat modeling using an ontology framework. 
-- Measuring a System’s Attack Surface. [Link](https://www.cs.cmu.edu/~wing/publications/tr04-102.pdf). Note: Read this to understand the attack surfaces in Linux OS.
-- [Clear Linux.](https://docs.01.org/clearlinux/latest/guides/index.html#clear-linux). This is a great resource.
+- [Measuring a System’s Attack Surface.](https://www.cs.cmu.edu/~wing/publications/tr04-102.pdf). Note: Read this to understand the attack surfaces in Linux OS. It has also listed various resource in Linux OS.
+- [Clear Linux.](https://docs.01.org/clearlinux/latest/guides/index.html#clear-linux). Note: This is a great resource.
 
