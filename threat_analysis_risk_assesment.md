@@ -79,3 +79,7 @@ Risk Analysis Steps:
 
 - [7 must-dos for delivering app-focused security](https://techbeacon.com/security/7-must-dos-delivering-app-focused-security)
 
+## Automotive Security
+
+- [Security Analysis of Android Automotive](https://rtcl.eecs.umich.edu/rtclweb/assets/publications/2020/mert-sae-2020.pdf)
+
