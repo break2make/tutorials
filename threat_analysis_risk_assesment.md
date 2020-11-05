@@ -19,6 +19,8 @@ Few interesting articles:
 - Threat Modeling for Automotive Security Analysis
 - Risk-Oriented Security Engineering (Interesting reading. well-written)
 - Combined automotive safety and security pattern engineering approach (Interesting reading)
+- [Threat Modeling for Cloud Data Center Infrastructures](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=921695)
+
 
 
 ### Other Resources
@@ -26,6 +28,9 @@ Few interesting articles:
 - https://medium.com/@informationsecurity/microsoft-threat-modeling-tools-logic-28ea9dd3b18d
 - Threat modeling for drivers - https://docs.microsoft.com/en-us/windows-hardware/drivers/driversecurity/threat-modeling-for-drivers
   **Note:** It has used STRDIE model, and this can be used an example for understnading the STRIDE threat modeling. 
+- [A Threat-Driven Approach to Cyber Security](https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Threat-Driven-Approach.pdf). It contains few examples for attack tree
+- [Threat modeling explained: A process for anticipating cyber attacks](https://www.csoonline.com/article/3537370/threat-modeling-explained-a-process-for-anticipating-cyber-attacks.html)
+- 
 
 ### Tools
 - https://github.com/OVVL-HSO/OVVL-Webapp
@@ -55,6 +60,10 @@ Risk Analysis Steps:
 - https://advisera.com/27001academy/knowledgebase/threats-vulnerabilities/
 
 ## Operating System Security
+
+### Windows
+
+-[PMCAP: A Threat Model of Process Memory Data on the Windows Operating System](http://downloads.hindawi.com/journals/scn/2017/4621587.pdf)
 
 ### Linux Security
 
