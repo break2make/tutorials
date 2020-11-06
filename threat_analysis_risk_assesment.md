@@ -32,6 +32,8 @@ Few interesting articles:
 - [Threat modeling explained: A process for anticipating cyber attacks](https://www.csoonline.com/article/3537370/threat-modeling-explained-a-process-for-anticipating-cyber-attacks.html)
 - 
 
+
+
 ### Tools
 - https://github.com/OVVL-HSO/OVVL-Webapp
   - Thesis: https://opus.hs-offenburg.de/frontdoor/deliver/index/docId/3339/file/Bachelorthesis_Tobias_Reski_18.02.2019.pdf
@@ -83,3 +85,9 @@ Risk Analysis Steps:
 
 - [Security Analysis of Android Automotive](https://rtcl.eecs.umich.edu/rtclweb/assets/publications/2020/mert-sae-2020.pdf)
 
+## Secure IC
+
+### Resources
+- [DARPA Doubles Down on Chip-Level Cybersecurity](https://www.allaboutcircuits.com/news/darpa-doubles-down-on-chip-level-cybersecurity/).
+  >"DARPA recognizes that hardware security is a specialized discipline mostly dominated by huge merchant semiconductor companies, such as Qualcomm, Intel, and Broadcom. Through 
+  >automation, DARPA hopes to democratize the process of building chip-level security, making it an achievable goal for even the smallest of IC builders."
