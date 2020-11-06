@@ -91,3 +91,5 @@ Risk Analysis Steps:
 - [DARPA Doubles Down on Chip-Level Cybersecurity](https://www.allaboutcircuits.com/news/darpa-doubles-down-on-chip-level-cybersecurity/).
   >"DARPA recognizes that hardware security is a specialized discipline mostly dominated by huge merchant semiconductor companies, such as Qualcomm, Intel, and Broadcom. Through 
   >automation, DARPA hopes to democratize the process of building chip-level security, making it an achievable goal for even the smallest of IC builders."
+- [Handbook for Robustness Validation of Automotive Electrical/Electronic Modules](https://tinyurl.com/y3qvuz84)
+- 
