@@ -87,9 +87,21 @@ Risk Analysis Steps:
 >
 >Capability systems protect against the confused deputy problem, whereas access control list-based systems do not." --[wikipedia](https://en.wikipedia.org/wiki/Confused_deputy_problem)
 
-
+### Resources
+- [A Theory and Tools for Applying Sandboxes Effectively](http://www.cs.cmu.edu/~mmaass/pdfs/dissertation.pdf)
 - [7 must-dos for delivering app-focused security](https://techbeacon.com/security/7-must-dos-delivering-app-focused-security)
+- [10 Steps to Secure Software](https://dzone.com/articles/10-steps-to-secure-software)
+- [Capability Theory by Sound Bytes](http://cap-lore.com/CapTheory/)
+- [Security of Embedded Software](https://www.diva-portal.org/smash/get/diva2:1149047/FULLTEXT01.pdf)
+- [Introduction to Embedded Linux Security - part 1](https://embeddedbits.org/introduction-embedded-linux-security-part-1/)
+- [Introduction to Embedded Linux Security - part 2](https://embeddedbits.org/introduction-embedded-linux-security-part-2/)
+- https://static.sched.com/hosted_files/ossna2020/72/introduction_embedded_linux_security.pdf
+- [Software Security](https://www.cs.colorado.edu/~kena/classes/5828/s12/presentation-materials/stevensonhunteralharbikhali.pdf) By Hunter Stevenson and Khalid Alharbi (Interesting - it has covered the security testing)
+- [ISO/IEC 27034:2011+ — Information technology — Security techniques](https://www.iso27001security.com/html/27034.html)
+- [Six security tips for embedded systems](https://www.rutronik.com/article/detail/News/six-security-tips-for-embedded-systems/)
+- [PaddyFrog: systematically detecting confused deputy vulnerability in Android applications](http://lilicoding.github.io/SA3Repo/papers/2015_wu2015paddyfrog.pdf)
 - 
+
 
 ## Automotive Security
 
