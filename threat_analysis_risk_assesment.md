@@ -76,6 +76,8 @@ Risk Analysis Steps:
 - Automating threat modeling using an ontology framework. 
 - [Measuring a System’s Attack Surface.](https://www.cs.cmu.edu/~wing/publications/tr04-102.pdf). Note: Read this to understand the attack surfaces in Linux OS. It has also listed various resource in Linux OS.
 - [Clear Linux.](https://docs.01.org/clearlinux/latest/guides/index.html#clear-linux). Note: This is a great resource.
+- [Operating System Security](https://www.ibr.cs.tu-bs.de/courses/ws1920/oss/index.html). Course at TUB
+
 
 ## Application Security
 
