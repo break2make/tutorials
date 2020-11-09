@@ -79,7 +79,17 @@ Risk Analysis Steps:
 
 ## Application Security
 
+### Well-know security problems
+
+#### Confused deputy problem
+
+>"In information security, the confused deputy problem is often cited as an example of why capability-based security is important. A confused deputy is a legitimate, more privileged computer program that is tricked by another program into misusing its authority on the system. It is a specific type of privilege escalation.
+>
+>Capability systems protect against the confused deputy problem, whereas access control list-based systems do not." --[wikipedia](https://en.wikipedia.org/wiki/Confused_deputy_problem)
+
+
 - [7 must-dos for delivering app-focused security](https://techbeacon.com/security/7-must-dos-delivering-app-focused-security)
+- 
 
 ## Automotive Security
 
