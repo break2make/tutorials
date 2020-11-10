@@ -119,3 +119,8 @@ Risk Analysis Steps:
   >automation, DARPA hopes to democratize the process of building chip-level security, making it an achievable goal for even the smallest of IC builders."
 - [Handbook for Robustness Validation of Automotive Electrical/Electronic Modules](https://tinyurl.com/y3qvuz84)
 - 
+
+### Papers
+- [Opening the Doors to Dynamic Camouflaging: Harnessing the Power of Polymorphic Devices](https://arxiv.org/pdf/1811.06012.pdf)
+
+
