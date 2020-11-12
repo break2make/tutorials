@@ -4,6 +4,7 @@ Few interesting articles:
 - Hardware and Security: Vulnerabilities and Solutions - https://www2.seas.gwu.edu/~simha/research/HWSecBookChapter12.pdf
   Note: this article discuss about to secure a hardware and hardware for software security
 - https://www.cybok.org/media/downloads/Hardware_Security_KA_-_draft_for_review_August_2019.pdf
+- [Lateral Thinking for Trustworthy Apps](https://os.inf.tu-dresden.de/papers_ps/icdcs2017-lateral-thinking.pdf). Read this to learn how isolation is required for ensuring better software security.
 
 
 ## Threat Analysis
