@@ -103,6 +103,11 @@ An pplication can contain implementation bugs (becomes untrusted) but the applic
 Sandboxing is a technique that enforces a security policy on executed code. The security policy includes guards
 and restrictions on memory accesses, restrictions on control flow transfers, and restrictions on instructions and combinations of instructions that can be executed. [source](https://nebelwelt.net/files/12Oakland.pdf)
 
+- [Safe Loading - A Foundation for Secure Execution of Untrusted Programs](https://nebelwelt.net/files/12Oakland.pdf)
+- [Boot with Integrity, or Don’t Boot](https://link.springer.com/chapter/10.1007/978-1-4302-6572-6_6)
+- [Patterns for Secure Boot and Secure Storage in Computer Systems](https://download.hrz.tu-darmstadt.de/media/FB20/Dekanat/Publikationen/TRUST/tc_patterns-LoSaWi2010.pdf)
+- [Ensuring Data Integrity in Storage: Techniques and Applications](https://www.fsl.cs.sunysb.edu/docs/integrity-storagess05/integrity.html)
+
 
 ### Resources
 - [A Theory and Tools for Applying Sandboxes Effectively](http://www.cs.cmu.edu/~mmaass/pdfs/dissertation.pdf)
