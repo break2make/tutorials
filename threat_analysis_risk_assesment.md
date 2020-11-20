@@ -97,6 +97,13 @@ An pplication can contain implementation bugs (becomes untrusted) but the applic
 >
 >Capability systems protect against the confused deputy problem, whereas access control list-based systems do not." --[wikipedia](https://en.wikipedia.org/wiki/Confused_deputy_problem)
 
+### Security Measures
+
+#### Sandboxing applications
+Sandboxing is a technique that enforces a security policy on executed code. The security policy includes guards
+and restrictions on memory accesses, restrictions on control flow transfers, and restrictions on instructions and combinations of instructions that can be executed. [source](https://nebelwelt.net/files/12Oakland.pdf)
+
+
 ### Resources
 - [A Theory and Tools for Applying Sandboxes Effectively](http://www.cs.cmu.edu/~mmaass/pdfs/dissertation.pdf)
 - [7 must-dos for delivering app-focused security](https://techbeacon.com/security/7-must-dos-delivering-app-focused-security)
