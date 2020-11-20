@@ -51,7 +51,13 @@ An opensource DIY self driving platform for small scale cars. [Link](https://www
 OpenXC™ is a combination of open source hardware and software that lets you extend your vehicle with custom applications and pluggable modules. It uses standard, well-known tools to open up a wealth of data from the vehicle to developers, even beyond OBD-II. For more details, check [here](http://openxcplatform.com/).
 
 ### MOPED
-https://antmicro.com/blog/2016/02/tx1-vs-tk1/
+- https://antmicro.com/blog/2016/02/tx1-vs-tk1/
+
+### UDS Server 
+https://github.com/zombieCraig/uds-server
+
+### Instrument Cluster Simulator for SocketCAN
+- https://github.com/zombieCraig/ICSim
 
 
 ## Papers and Thesis
