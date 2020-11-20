@@ -82,7 +82,12 @@ Risk Analysis Steps:
 
 
 
-## Application Security
+## Software Security
+
+### Definitions
+
+#### Untrusted vs. Macilious Applications
+An pplication can contain implementation bugs (becomes untrusted) but the application is not controlled by the attacker. If the application is controlled by attacker, then it is called malicious.
 
 ### Well-know security problems
 
