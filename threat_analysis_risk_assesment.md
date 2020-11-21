@@ -131,6 +131,11 @@ and restrictions on memory accesses, restrictions on control flow transfers, and
 
 ## Secure IC
 
+### IC Supply Chain security
+
+#### Logic locking
+- [MEST Webinar: Logic Locking Research (2008 - Present)](https://www.youtube.com/watch?v=S-eTSlpCh7M)
+
 ### Resources
 - [DARPA Doubles Down on Chip-Level Cybersecurity](https://www.allaboutcircuits.com/news/darpa-doubles-down-on-chip-level-cybersecurity/).
   >"DARPA recognizes that hardware security is a specialized discipline mostly dominated by huge merchant semiconductor companies, such as Qualcomm, Intel, and Broadcom. Through 
