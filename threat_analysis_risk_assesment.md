@@ -124,7 +124,6 @@ and restrictions on memory accesses, restrictions on control flow transfers, and
 - [PaddyFrog: systematically detecting confused deputy vulnerability in Android applications](http://lilicoding.github.io/SA3Repo/papers/2015_wu2015paddyfrog.pdf)
 - 
 
-
 ## Automotive Security
 
 - [Security Analysis of Android Automotive](https://rtcl.eecs.umich.edu/rtclweb/assets/publications/2020/mert-sae-2020.pdf)
@@ -147,3 +146,6 @@ and restrictions on memory accesses, restrictions on control flow transfers, and
 - [Opening the Doors to Dynamic Camouflaging: Harnessing the Power of Polymorphic Devices](https://arxiv.org/pdf/1811.06012.pdf)
 
 
+## Other Intersting Topics
+
+- [TrInc: Small Trusted Hardware for Large Distributed Systems](https://www.usenix.org/legacy/events/nsdi09/tech/full_papers/levin/levin.pdf)
