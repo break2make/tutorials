@@ -136,6 +136,10 @@ and restrictions on memory accesses, restrictions on control flow transfers, and
 
 #### Logic locking
 - [MEST Webinar: Logic Locking Research (2008 - Present)](https://www.youtube.com/watch?v=S-eTSlpCh7M)
+- [https://www.esat.kuleuven.be/cosic/publications/article-2750.pdf](https://eprint.iacr.org/2019/796.pdf)
+- [Provably-Secure Logic Locking: From Theory To Practice](https://acmccs.github.io/papers/p1601-yasinA.pdf)
+- [Logic Locking: A Survey of Proposed Methods and Evaluation Metrics](http://www.eng.auburn.edu/~vagrawal/JETTA/FULL_ISSUE_35-3/P01_Dupuis_35-3_p273-291.pdf)
+- [Trustworthy Hardware Design: Combinational Logic Locking Techniques](https://link.springer.com/book/10.1007%2F978-3-030-15334-2)
 
 ### Resources
 - [DARPA Doubles Down on Chip-Level Cybersecurity](https://www.allaboutcircuits.com/news/darpa-doubles-down-on-chip-level-cybersecurity/).
