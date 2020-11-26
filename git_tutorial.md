@@ -47,6 +47,8 @@ Quick steps to be executed before merging `branch-X` into `branch-Y`:
     git merge branch-X
     ```
 
+ If you find any conflict during merging, please resolved them first with the help of [link](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts), and then track those changes using `git add` and eventually use `git commit`.
+
 # Rewriting the most recent commit message
 You can change the most recent commit message using the following command:
 ```
