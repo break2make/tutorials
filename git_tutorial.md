@@ -22,6 +22,11 @@ This `.gitignore` provides the following as advantages:
 - We can tell git to ignore specific type of files. The `*` is mentioned to ignore everything inside this directory. 
 - Using `!.gitignore`, you are telling git to track the `.gitignore`.
 
+For further reading, check these resources:
+- [What are the differences between .gitignore and .gitkeep?](https://stackoverflow.com/questions/7229885/what-are-the-differences-between-gitignore-and-gitkeep)
+- [Hey git, please .keep those folders](https://medium.com/@kinduff/hey-git-please-keep-those-folders-eb0ed37621c8)
+- [How can I add an empty directory to a Git repository?](https://stackoverflow.com/questions/115983/how-can-i-add-an-empty-directory-to-a-git-repository)
+- [Does Git delete empty folders?](https://superuser.com/questions/1472515/does-git-delete-empty-folders)
 
 # Git Merge
 Please check the following liks:
