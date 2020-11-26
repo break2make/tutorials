@@ -18,7 +18,7 @@ The name of the stub-file can be anything. However, if we use `.gitignore` as su
 # Except this file
 !.gitignore
 ```
-This `.gitignore` provides the following as advantages:
+This `.gitignore` provides the following advantages:
 - We can tell git to ignore specific type of files. The `*` is mentioned to ignore everything inside this directory. 
 - Using `!.gitignore`, you are telling git to track the `.gitignore`.
 
