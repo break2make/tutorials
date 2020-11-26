@@ -6,6 +6,9 @@ To know which files are ignored (not tracked) by git in your local directory, we
 $ git status --ignored
 ```
 
+Useful resources to learn how to write a `.gitignore`
+- https://docs.microsoft.com/en-us/azure/devops/repos/git/ignore-files?view=azure-devops&tabs=visual-studio
+
 
 # Can't keep an empty folder in git
 
