@@ -5,6 +5,7 @@ To know which files are ignored (not tracked) by git in your local directory, we
 ```
 $ git status --ignored
 ```
+To learn the syntax of `.gitignore`, check [this](https://linuxize.com/post/gitignore-ignoring-files-in-git/) resource.
 
 Useful resources to learn how to write a `.gitignore`
 - https://docs.microsoft.com/en-us/azure/devops/repos/git/ignore-files?view=azure-devops&tabs=visual-studio
