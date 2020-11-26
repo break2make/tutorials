@@ -1,3 +1,28 @@
+
+# .gitignore
+
+To know which files are ignored (not tracked) by git in your local directory, we can use the following command (there are many commands to do the same):
+```
+$ git status --ignored
+```
+
+
+# Can't keep an empty folder in git
+
+>There are times when you'd like to track an empty directory within git but there's a problem: git wont allow you to add a directory that doesn't have a file in it.  The easy solution is putting an empty stub file within the directory. [source](https://davidwalsh.name/git-empty-directory)
+
+The name of the stub-file can be anything. However, if we use `.gitignore` as sub-file with the following content, it provides additional advantage.
+```txt
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
+```
+This `.gitignore` provides the following as advantages:
+- We can tell git to ignore specific type of files. The `*` is mentioned to ignore everything inside this directory. 
+- Using `!.gitignore`, you are telling git to track the `.gitignore`.
+
+
 # Git Merge
 Please check the following liks:
 - [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
