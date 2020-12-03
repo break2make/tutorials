@@ -11,6 +11,7 @@ Basic components of protobuf:
 ## Resources
 - https://dev.to/techschoolguru/protocol-buffer-deep-dive-52d9. A good resource.
 - [Protocol Buffers Crash Course](https://www.youtube.com/watch?v=46O73On0gyI). A good resource to start.
+- https://docs.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/protocol-buffers
 - [Serialization formats: JSON and Protobuf](https://www.youtube.com/watch?v=uGYZn6xk-hA)
 - [Protocol Buffers & JSON - SingaporeJS](https://www.youtube.com/watch?v=9IUrAZHxn3s)
 - [The Need for Protocol Buffers](https://www.youtube.com/watch?v=BywIOD_Y3CE)
