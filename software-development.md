@@ -1,4 +1,19 @@
-# Software Development
+Software Development
+===
+
+# Build vs Meta-buid Systems
+
+## Build System
+In a nutshell, build system is the collection of scripts mentioning how to build the “targets”, which contains compiler commands. We can skip the complex process of writing long long compiler commands with its compile options. Make, Autotools, Ninja, such things are the example of build system for C, C++.
+
+## Meta-build System
+Meta-build system provides platform-independent script to generate build script depending on the platform. The meta-build script could generate the target build script at runtime. CMAKE is the most well-known for C, C++, and there are many like GN (From google), and Waf.
+
+## Resources
+- [Build System, Meta-Build System and Compilers](https://sinban04.github.io/build-system/). Having good explanation with examples.
+- [An overview of build systems (mostly for C++ projects)](https://medium.com/@julienjorge/an-overview-of-build-systems-mostly-for-c-projects-ac9931494444)
+
+# Framework vs Libraries vs Service
 
 In application development, it is very common to use framework/libraries/service which provide reusable functionalities that encapsulate lower-level functionalities by providing an higher abstraction to the inner complexities of certain features.
 
