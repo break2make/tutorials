@@ -35,15 +35,6 @@ So, while the application code is constantly changing as the application evolves
 - is a running system that provies functionality to other sstems
 - black box from outside the application (other app doesnt know the code behind)
 - contractbased (WSDL, WADL, etc)
-
-
-## C/C++ Development
-
-
-### Cmake
-
-#### Resource
-- [CMake Tutorial EP 1 | Understanding The Basics](https://www.youtube.com/watch?v=nlKcXPUJGwA)
 - API with application protokol, dataformat (JMS, HTTP, XML, JSON, etc)
 
 The agility, reuse, and transparency benefits of a service are just too hard to ignore. However, there are specific cases where creating libraries could be more appropriate:
@@ -87,3 +78,31 @@ An API exactly defines the methods for one software program to interact with the
 ](https://stackoverflow.com/questions/1312825/web-service-vs-shared-library)
 - [APIs versus services – is there a difference?](https://developer.ibm.com/technologies/api/articles/api-vs-services-whats-the-difference/)
 - [Difference Between API and Web Service](https://medium.com/@programmerasi/difference-between-api-and-web-service-73c873573c9d)
+
+
+
+## C/C++ Development
+
+### Cmake
+
+#### Resource
+- [CMake Tutorial EP 1 | Understanding The Basics](https://www.youtube.com/watch?v=nlKcXPUJGwA)
+
+### Visual Studio Code
+
+We can use VScode for development in the following ways:
+- Development in the local host
+- Development in remote host (remote machine or VM)
+- Development in container
+
+#### Development in remote host
+Steps to be followed:
+1. Install VScode in the local machine with `remote ssh` extension  
+1. Check the SSH connection between local and remote machine
+1. Use the `remote` extension or `Remote-SSH: Connect to Host...` from the Command Palette (F1) to add new host
+1. Provide `usename@hostname` and then password in the prompt to establish the connection.
+1. It is now ready. Open the folde or workspace in the remote host and start development!!!
+
+For more details, check VScode official document:
+- [Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh)
+- [Remote Development with VS Code](https://code.visualstudio.com/blogs/2019/05/02/remote-development)
