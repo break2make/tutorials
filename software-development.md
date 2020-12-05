@@ -100,7 +100,7 @@ Steps to be followed:
 1. Install VScode in the local machine with `remote ssh` extension  
 1. Check the SSH connection between local and remote machine
 1. Use the `remote` extension or `Remote-SSH: Connect to Host...` from the Command Palette (F1) to add new host
-1. Provide `usename@hostname` and then password in the prompt to establish the connection.
+1. Provide `username@hostname` and then password in the prompt to establish the connection.
 1. It is now ready. Open the folde or workspace in the remote host and start development!!!
 
 For more details, check VScode official document:
