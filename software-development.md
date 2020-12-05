@@ -35,6 +35,15 @@ So, while the application code is constantly changing as the application evolves
 - is a running system that provies functionality to other sstems
 - black box from outside the application (other app doesnt know the code behind)
 - contractbased (WSDL, WADL, etc)
+
+
+## C/C++ Development
+
+
+### Cmake
+
+#### Resource
+- [CMake Tutorial EP 1 | Understanding The Basics](https://www.youtube.com/watch?v=nlKcXPUJGwA)
 - API with application protokol, dataformat (JMS, HTTP, XML, JSON, etc)
 
 The agility, reuse, and transparency benefits of a service are just too hard to ignore. However, there are specific cases where creating libraries could be more appropriate:
