@@ -34,3 +34,10 @@ An effective and efficient fuzzing shall eliminate the following problems:
 - [A survey of some free fuzzing tools](https://lwn.net/Articles/744269/)
 - [Open Source Fuzzers list (and other fuzzing tools)](https://www.peerlyst.com/posts/resource-open-source-fuzzers-list)
 - [Differential fuzzing of cryptographic libraries](https://guidovranken.com/2019/05/14/differential-fuzzing-of-cryptographic-libraries/)
+
+
+# Other resources
+- http://www.cs.columbia.edu/~suman/secure_sw_devel/fuzzing.pdf
+- https://www.cs.ucr.edu/~heng/teaching/cs260-winter2017/fuzzing.pdf
+- 
+
