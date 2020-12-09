@@ -26,6 +26,8 @@ An effective and efficient fuzzing shall eliminate the following problems:
 - [Singularity: Pattern Fuzzing for Worst Case Complexity](https://www.cs.utexas.edu/~isil/fse18.pdf)
 - [JQF: Coverage-Guided Property-Based Testing in Java](https://people.eecs.berkeley.edu/~rohanpadhye/files/jqf-issta19.pdf)
 - [RFUZZ: Coverage-Directed Fuzz Testing of RTL on FPGAs](https://people.eecs.berkeley.edu/~ksen/papers/rfuzz.pdf)
+- [Smart Greybox Fuzzing](https://arxiv.org/pdf/1811.09447.pdf)
+- 
 
 # Links
 - https://www.f-secure.com/en/consulting/our-thinking/15-minute-guide-to-fuzzing (Very good summary)
@@ -34,10 +36,13 @@ An effective and efficient fuzzing shall eliminate the following problems:
 - [A survey of some free fuzzing tools](https://lwn.net/Articles/744269/)
 - [Open Source Fuzzers list (and other fuzzing tools)](https://www.peerlyst.com/posts/resource-open-source-fuzzers-list)
 - [Differential fuzzing of cryptographic libraries](https://guidovranken.com/2019/05/14/differential-fuzzing-of-cryptographic-libraries/)
+- [Fuzzing – Mutation vs. Generation](https://resources.infosecinstitute.com/topic/fuzzing-mutation-vs-generation/) why fuzzing is required?
+- [Fuzzing ICS Protocols](https://dreamlab.net/en/blog/post/fuzzing-ics-protocols/)
 
 
 # Other resources
 - http://www.cs.columbia.edu/~suman/secure_sw_devel/fuzzing.pdf
 - https://www.cs.ucr.edu/~heng/teaching/cs260-winter2017/fuzzing.pdf
+- [Automated Penetration Testing with White-Box Fuzzing](https://docs.microsoft.com/en-us/previous-versions/software-testing/cc162782(v=msdn.10)?redirectedfrom=MSDN) Interesting content.
 - 
 
