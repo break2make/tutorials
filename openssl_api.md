@@ -316,6 +316,12 @@ EC_KEY_set_group(eckey, ecgroup);
  
  ### Load key from file
  
+The key can be stred either in DER or PEM format. Note that private key also store the public key while using openssl API to save the `EC_KEY` into file. The loading of key file use two different set of APIs for this purpose:
+- For ASN.1/DER, we have `d2i_ECPrivateKey` and `d2i_EC_PUBKEY` APIs for reading private key file and public key file, respectively.
+- For PEM, we use `PEM_read_ECPrivateKey` and `PEM_read_EC_PUBKEY`. The write functions are similar and documented in the man pages.
+
+Note that `d2i_*` is "DER to internal", and its used to read ASN.1/DER keys. The write functions use `i2d_*` and its "internal to DER". PEM does not use a cryptic prefix. Check this [post](https://stackoverflow.com/questions/38269867/reading-and-writing-openssl-ecdsa-keys-to-pem-file), for more details.
+ 
 
 
 # Links
