@@ -288,6 +288,35 @@ struct ec_key_st {
 ```
 Source: https://github.com/enthought/openssl/blob/master/crypto/ec/ec_lcl.h
 
+## Key Generation
+
+### Command
+
+### API
+
+We can use the following function to generate the EC key pair:
+```
+EC_KEY * generate_eckey() {
+    EC_KEY *eckey=EC_KEY_new();
+    EC_GROUP *ecgroup= EC_GROUP_new_by_curve_name(NID_secp256k1);
+    EC_KEY_set_group(eckey, ecgroup);
+    EC_KEY_generate_key(eckey);
+
+    return eckey;
+}
+```
+We can also use a single API ``eckey = EC_KEY_new_by_curve_name(curve_nid)`` in place of the following three lines in the above code:
+```
+EC_KEY *eckey=EC_KEY_new();
+EC_GROUP *ecgroup= EC_GROUP_new_by_curve_name(NID_secp256k1);
+EC_KEY_set_group(eckey, ecgroup);
+ ```
+ 
+ ### Save the key into file
+ 
+ ### Load key from file
+ 
+
 
 # Links
 ## Book
