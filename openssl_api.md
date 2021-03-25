@@ -305,7 +305,7 @@ EC_KEY * generate_eckey() {
     return eckey;
 }
 ```
-We can also use a single API ``eckey = EC_KEY_new_by_curve_name(curve_nid)`` in place of the following three lines in the above code:
+We can also use a single API ``eckey = EC_KEY_new_by_curve_name(NID_secp256k1)`` in place of the following three lines in the above code:
 ```
 EC_KEY *eckey=EC_KEY_new();
 EC_GROUP *ecgroup= EC_GROUP_new_by_curve_name(NID_secp256k1);
