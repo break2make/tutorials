@@ -1,5 +1,7 @@
 
-
+# Links
+- https://latacora.micro.blog/2018/04/03/cryptographic-right-answers.html
+- https://paragonie.com/blog/2019/03/definitive-2019-guide-cryptographic-key-sizes-and-algorithm-recommendations
 
 # RSA 
 
