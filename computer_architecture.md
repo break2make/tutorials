@@ -1,5 +1,5 @@
 
-# Computer Organization
+# Computer Architecture
 
 ## Instruction Set Architecture
 
