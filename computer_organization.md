@@ -9,3 +9,4 @@ Read the following resource to understand this topic:
 - Dynamic branch prediction [[video](https://www.youtube.com/watch?v=MFgSSm7KaYY)]
 - Introduction to Dynamic Branch Prediction by Prof. Dr. Ben H. Juurlink [[video](https://www.youtube.com/watch?v=PFmx2p6NA0A)]
   - Advanced Branch Prediction [[video](https://www.youtube.com/watch?v=avp3bDqCXYM)]
+- (m, n) Branch Predictors by [[video](https://www.youtube.com/watch?v=RShaZENRGFg0)]
