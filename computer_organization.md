@@ -1,7 +1,7 @@
 
 # Computer Organization
 
-## Instrion Set Architecture
+## Instruction Set Architecture
 
 ## Microarchitecture
 
