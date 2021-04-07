@@ -1,11 +1,60 @@
+# Openssl
 
-# Installation
 
-To debug your code using openssl library, we need to build the openssl library in debug mode which generates debug sysmbol for openssl.
-For more details, read the following resources:
-- [Debugging OpenSSL code using gdb](https://medium.com/@amit.kulkarni/debugging-openssl-code-using-gdb-55451efe9428)
-- Download the latest version from https://www.openssl.org/source/. Try to use version 1.1.1k or above
-- There were few reported vulnerability in openssl 1.1.1g and those are corrected in version 1.1.1k
+## Installation
+
+First, download the latest version from https://www.openssl.org/source/. I suggest to use version 1.1.1k or above as there were few reported vulnerability in openssl 1.1.1g and those are corrected in version 1.1.1k.
+
+```
+$ wget https://www.openssl.org/source/openssl-1.1.1k.tar.gz
+$ wget https://www.openssl.org/source/openssl-1.1.1k.tar.gz.sha256
+$ sha256sum openssl-1.1.1k.tar.gz
+$ cat openssl-1.1.1k.tar.gz.sha256
+$tar -zxvf openssl-1.1.1k.tar.gz
+$ cd openssl-1.1.1k/
+```
+Now, configure the installation (with debug option - To debug your code using openssl library, we need to build the openssl library in debug mode which generates debug sysmbol for openssl.):
+
+```
+./config --prefix=/usr/local/openssl_111k_d --openssldir=/usr/local/openssl_111k_d -d shared no-asm no-ssl2 -g3 -ggdb -gdwarf-4 -fno-inline -O0 -fno-omit-frame-pointer
+```
+
+Then,
+```
+$ make
+```
+
+```
+$ echo $?
+0
+```
+
+```
+$ make test
+```
+
+```
+$ echo $?
+0
+```
+
+```
+$ make install
+```
+
+```
+$ echo $?
+0
+```
+
+### Configuration for shared library and binary (Post installation)
+
+### Links
+- [Debugging OpenSSL code using gdb](https://medium.com/@amit.kulkarni/debugging-openssl-code-using-gdb-55451efe9428). Also check the following links:
+	-  [Installing OpenSSL on Ubuntu](https://www.spinup.com/installing-openssl-on-ubuntu/)
+	-  [Installing OpenSSL on Ubuntu 16.04/18.04](https://cloudwafer.com/blog/installing-openssl-on-ubuntu-16-04-18-04/)
+
+
 
 
 
