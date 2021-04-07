@@ -4,7 +4,8 @@
 To debug your code using openssl library, we need to build the openssl library in debug mode which generates debug sysmbol for openssl.
 For more details, read the following resources:
 - [Debugging OpenSSL code using gdb](https://medium.com/@amit.kulkarni/debugging-openssl-code-using-gdb-55451efe9428)
-- 
+- Download the latest version from https://www.openssl.org/source/. Try to use version 1.1.1k or above
+- There were few reported vulnerability in openssl 1.1.1g and those are corrected in version 1.1.1k
 
 
 
