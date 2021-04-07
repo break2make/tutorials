@@ -39,7 +39,7 @@ $ echo $?
 ```
 
 ```
-$ make install
+$ sudo make install
 ```
 
 ```
