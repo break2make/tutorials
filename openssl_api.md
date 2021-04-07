@@ -80,6 +80,14 @@ There are different types of APIs for read and write from/to a file in PEM forma
 - the keys are written/read from file or bio
 - keys are available as generic EVP_PEKY structure or algorithm specific structure like RSA, EC_KEY, DSA, etc.
 
+
+# HKDF
+
+### Links
+- [HKDF implementation](https://www.programmersought.com/article/90085279316/)
+- 
+
+
 # Key management using EVP API
 
 Definition of all structure for evp can be found: https://github.com/openssl/openssl/blob/master/include/crypto/evp.h
@@ -381,6 +389,8 @@ The key can be stred either in DER or PEM format. Note that private key also sto
 - For PEM, we use `PEM_read_ECPrivateKey` and `PEM_read_EC_PUBKEY`. The write functions are similar and documented in the man pages.
 
 Note that `d2i_*` is "DER to internal", and its used to read ASN.1/DER keys. The write functions use `i2d_*` and its "internal to DER". PEM does not use a cryptic prefix. Check this [post](https://stackoverflow.com/questions/38269867/reading-and-writing-openssl-ecdsa-keys-to-pem-file), for more details.
+ 
+ 
  
 
 
