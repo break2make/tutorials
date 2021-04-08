@@ -17,6 +17,9 @@ Read the following resource to understand this topic:
 - Introduction to Dynamic Branch Prediction by Prof. Dr. Ben H. Juurlink [[video](https://www.youtube.com/watch?v=PFmx2p6NA0A)]
   - Advanced Branch Prediction [[video](https://www.youtube.com/watch?v=avp3bDqCXYM)]
 - (m, n) Branch Predictors by [[video](https://www.youtube.com/watch?v=RShaZENRGFg0)]
+- An Analysis of Dynamic Branch Prediction Schemes on System Workloads [[Paper](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.47.2721&rep=rep1&type=pdf)]
+- Branch prediction by ARM [[Web](https://developer.arm.com/documentation/ddi0211/h/program-flow-prediction/branch-prediction)]
+- What is Code Modernization? [[Web](https://software.intel.com/content/www/us/en/develop/topics/modern-code.html)]
 
 ## Cache Memory
 
