@@ -410,7 +410,7 @@ For modes like `CTR`, and `GCM`, no padding is used, and thus, plaintext and cip
 
 ## AES GCM
 
-###Inputs and Outputs to GCM
+### Inputs and Outputs to GCM
 
 GCM has two operations, authenticated encryption and authenticated decryption. The authenticated encryption operation has four inputs, each of which is a bit string:
 A secret key K, whose length is appropriate for the underlying block cipher.
@@ -422,6 +422,9 @@ The There two Outputs:
 
 - A ciphertext C whose length is exactly that of the plaintext P.
 - An authentication tag T, whose length can be any value between 0 and 128. The length of the tag is denoted as t.
+
+The authenticated decryption operation has five inputs: K, IV, C, A and T. It has only a single output, either the plaintext value P or a special symbol ‘FAIL’ that indicates that the inputs are not authentic. A ciphertext C, initialization vector IV, additional authenticated data A and tag T are authentic for key K when they are generated with the encrypt operation with inputs K, IV, A and P, for some plaintext P. 
+
 
 Consdier the follwing facts while configuring the AES-GCM:
 
