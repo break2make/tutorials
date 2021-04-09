@@ -391,7 +391,37 @@ The key can be stred either in DER or PEM format. Note that private key also sto
 Note that `d2i_*` is "DER to internal", and its used to read ASN.1/DER keys. The write functions use `i2d_*` and its "internal to DER". PEM does not use a cryptic prefix. Check this [post](https://stackoverflow.com/questions/38269867/reading-and-writing-openssl-ecdsa-keys-to-pem-file), for more details.
  
  
+ # AES
  
+ ## What should be the length ciphertext?
+
+Assuming PKCS#7 padding, which is the default for OpenSSL ECB and CBC mode, the encrypted length will be:
+```
+plaintext_len + block_size - (plaintext_len % block_size)
+```
+where `block_size = 16` for AES. The end result is always a multiple of block_size. 
+
+For modes like `CTR`, and `GCM`, no padding is used, and thus, plaintext and ciphertext lengths are same.
+
+
+### AES GCM
+
+Consdier the follwing facts while configuring the AES-GCM:
+
+- **Output size = input size**. That's correct, GCM uses CTR internally. It encrypts a counter value for each block, but it only uses as many bits as required from the last block. CTR turns the block cipher into a stream cipher. Note that this doesn't include any additional authenticated data (AAD) that needs to be send, the optional inclusion of the (otherwise required) IV nor size of the required authentication tag.
+
+- **IV of any size**. For GCM a **12 byte (96-bit)** IV is strongly suggested as other IV lengths will require additional calculations. In principle any IV size can be used as long as the IV doesn't ever repeat. NIST however suggests that only an IV size of 12 bytes needs to be supported by implementations. How to transport IV Yes, generally the IV is prefixed to the ciphertext or calculated using some kind of nonce on both sides. The size of the IV should be defined by the protocol. If it is possible to synchronize a nonce of 12 bytes then the IV doesn't need to be included with the ciphertext.
+
+- **Size of authentication tags**. The calculated tag will always be 16 bytes long, but the leftmost bytes can be used. GCM is defined for the tag sizes 128, 120, 112, 104, or 96, 64 and 32. Note that the security of GCM is strongly dependent on the tag size. You should try and use a tag size of 64 bits at the very minimum, but in general a tag size of the full **128 bits* should be preferred.
+
+Check the followng links for more details:
+- Ciphertext and tag size and IV transmission with AES in GCM mode. [[stackexchange](https://crypto.stackexchange.com/questions/26783/ciphertext-and-tag-size-and-iv-transmission-with-aes-in-gcm-mode)]
+- Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC [[NIST](https://csrc.nist.gov/publications/detail/sp/800-38d/final)]
+- EVP Authenticated Encryption and Decryption. [[Openssl wiki](https://wiki.openssl.org/index.php/EVP_Authenticated_Encryption_and_Decryption)]
+- Galois / Counter Mode (GCM) Cipher. [[Blog](https://wirelessonthego.postach.io/post/galois-counter-mode-gcm-cipher)]
+- Simple AES GCM test program [[Openssl source](https://github.com/openssl/openssl/blob/master/demos/evp/aesgcm.c)]
+
+
 
 
 # Links
