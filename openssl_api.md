@@ -426,13 +426,13 @@ The There two Outputs:
 The authenticated decryption operation has five inputs: K, IV, C, A and T. It has only a single output, either the plaintext value P or a special symbol ‘FAIL’ that indicates that the inputs are not authentic. A ciphertext C, initialization vector IV, additional authenticated data A and tag T are authentic for key K when they are generated with the encrypt operation with inputs K, IV, A and P, for some plaintext P. 
 
 
-Consdier the follwing facts while configuring the AES-GCM:
+### Configuring Parameters
 
 - **Output size = input size**. That's correct, GCM uses CTR internally. It encrypts a counter value for each block, but it only uses as many bits as required from the last block. CTR turns the block cipher into a stream cipher. Note that this doesn't include any additional authenticated data (AAD) that needs to be send, the optional inclusion of the (otherwise required) IV nor size of the required authentication tag.
 
 - **IV of any size**. For GCM a **12 byte (96-bit)** IV is strongly suggested as other IV lengths will require additional calculations. In principle any IV size can be used as long as the IV doesn't ever repeat. NIST however suggests that only an IV size of 12 bytes needs to be supported by implementations. How to transport IV Yes, generally the IV is prefixed to the ciphertext or calculated using some kind of nonce on both sides. The size of the IV should be defined by the protocol. If it is possible to synchronize a nonce of 12 bytes then the IV doesn't need to be included with the ciphertext.
 
-- **Size of authentication tags**. The calculated tag will always be 16 bytes long, but the leftmost bytes can be used. GCM is defined for the tag sizes 128, 120, 112, 104, or 96, 64 and 32. Note that the security of GCM is strongly dependent on the tag size. You should try and use a tag size of 64 bits at the very minimum, but in general a tag size of the full **128 bits* should be preferred.
+- **Size of authentication tags**. The calculated tag will always be 16 bytes long, but the leftmost bytes can be used. GCM is defined for the tag sizes 128, 120, 112, 104, or 96, 64 and 32. Note that the security of GCM is strongly dependent on the tag size. You should try and use a tag size of 64 bits at the very minimum, but in general a tag size of the full **128 bits** should be preferred.
 
 Check the followng links for more details:
 - Ciphertext and tag size and IV transmission with AES in GCM mode. [[stackexchange](https://crypto.stackexchange.com/questions/26783/ciphertext-and-tag-size-and-iv-transmission-with-aes-in-gcm-mode)]
