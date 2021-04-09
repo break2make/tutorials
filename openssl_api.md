@@ -393,6 +393,10 @@ Note that `d2i_*` is "DER to internal", and its used to read ASN.1/DER keys. The
  
  # AES
  
+ Input specification:
+ - **Block size**. 128-bit (16 bytes)
+ - **Key size**. 128-, 192-, 256-bit
+ 
  ## What should be the length of a ciphertext?
 
 Assuming PKCS#7 padding, which is the default for OpenSSL ECB and CBC mode, the encrypted length will be:
