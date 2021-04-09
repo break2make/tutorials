@@ -424,6 +424,7 @@ Check the followng links for more details:
 - EVP Authenticated Encryption and Decryption. [[Openssl wiki](https://wiki.openssl.org/index.php/EVP_Authenticated_Encryption_and_Decryption)]
 - Galois / Counter Mode (GCM) Cipher. [[Blog](https://wirelessonthego.postach.io/post/galois-counter-mode-gcm-cipher)]
 - Simple AES GCM test program [[Openssl source](https://github.com/openssl/openssl/blob/master/demos/evp/aesgcm.c)]
+- Authenticated Encryption Gcm Ccm [[Slides](https://www.slideshare.net/ProjectSymphony/authenticated-encryption-gcm-ccm)]
 
 
 
