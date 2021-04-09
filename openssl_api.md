@@ -434,6 +434,9 @@ The authenticated decryption operation has five inputs: K, IV, C, A and T. It ha
 
 - **Size of authentication tags**. The calculated tag will always be 16 bytes long, but the leftmost bytes can be used. GCM is defined for the tag sizes 128, 120, 112, 104, or 96, 64 and 32. Note that the security of GCM is strongly dependent on the tag size. You should try and use a tag size of 64 bits at the very minimum, but in general a tag size of the full **128 bits** should be preferred.
 
+Few observations:
+- In my AES-GCM implementation with IV more than 12 bytes, the decryption failed. [To be investigated].
+
 Check the followng links for more details:
 - Ciphertext and tag size and IV transmission with AES in GCM mode. [[stackexchange](https://crypto.stackexchange.com/questions/26783/ciphertext-and-tag-size-and-iv-transmission-with-aes-in-gcm-mode)]
 - Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC [[NIST](https://csrc.nist.gov/publications/detail/sp/800-38d/final)]
@@ -441,6 +444,7 @@ Check the followng links for more details:
 - Galois / Counter Mode (GCM) Cipher. [[Blog](https://wirelessonthego.postach.io/post/galois-counter-mode-gcm-cipher)]
 - Simple AES GCM test program [[Openssl source](https://github.com/openssl/openssl/blob/master/demos/evp/aesgcm.c)]
 - Authenticated Encryption Gcm Ccm [[Slides](https://www.slideshare.net/ProjectSymphony/authenticated-encryption-gcm-ccm)]
+- AES-GCM IV Vulnerabilities [[wycheproof](https://github.com/google/wycheproof/blob/master/doc/aesgcm.md)]
 
 
 
