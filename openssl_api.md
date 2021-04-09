@@ -408,7 +408,20 @@ where `block_size = 16` for AES. The end result is always a multiple of block_si
 For modes like `CTR`, and `GCM`, no padding is used, and thus, plaintext and ciphertext lengths are same.
 
 
-### AES GCM
+## AES GCM
+
+###Inputs and Outputs to GCM
+
+GCM has two operations, authenticated encryption and authenticated decryption. The authenticated encryption operation has four inputs, each of which is a bit string:
+A secret key K, whose length is appropriate for the underlying block cipher.
+- An initialization vector IV, that can have any number of bits between 1 and 2^64. For a fixed value of key, each IV value must be distinct, but need not have equal lengths. 96-bit IV values can be processed more efficiently, so that length is recommended for situations in which efficiency is critical.
+- A plaintext P, which can have any number of bits between 0 and 2^39 - 256.
+- Additional authenticated data (AAD), which is denoted as A. This data is authenticated, but not encrypted, and can have any number of bits between 0 and 2^64.
+
+The There two Outputs:
+
+- A ciphertext C whose length is exactly that of the plaintext P.
+- An authentication tag T, whose length can be any value between 0 and 128. The length of the tag is denoted as t.
 
 Consdier the follwing facts while configuring the AES-GCM:
 
