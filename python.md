@@ -38,9 +38,7 @@ source ~/.bashrc
 
 # Python virtual environment
 
-
-
-## virtualenv
+## Install virtualenv
 Install virtualenv via pip:
 
 ```bash
@@ -50,6 +48,16 @@ Test your installation:
 ```bash
 $ virtualenv --version
 ```
+
+## Create a virtual env
+
+```
+$ virtualenv -p </usr/bin/python3.8> ./venv [--always-copy]
+```
+
+Options:
+- `-p` to specify the a specific version of python for your vurtual environment
+- --always-copy to avoid the symbolic link copy problem. `I found a problem without `--always-copy` while trying to create virtual environment in virtualbox shared folder in Ubuntu 20.04`.
 
 Important Links
 - https://docs.python-guide.org/dev/virtualenvs/
