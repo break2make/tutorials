@@ -52,12 +52,45 @@ $ virtualenv --version
 ## Create a virtual env
 
 ```
-$ virtualenv -p </usr/bin/python3.8> ./venv [--always-copy]
+$ virtualenv -p </usr/bin/python3.8> ./.venv [--always-copy]
 ```
 
 Options:
 - `-p` to specify the a specific version of python for your vurtual environment
 - --always-copy to avoid the symbolic link copy problem. `I found a problem without `--always-copy` while trying to create virtual environment in virtualbox shared folder in Ubuntu 20.04`.
+
+## Srtat using .venv
+To begin using the virtual environment, it needs to be activated:
+
+```
+$ source .venv/bin/activate
+```
+Assuming that you are in your project directory:
+
+...\project_folder> venv\bin\activate
+Install packages using the pip command:
+
+```
+$ pip install requests
+```
+If you are done working in the virtual environment for the moment, you can deactivate it:
+
+```
+$ deactivate
+```
+
+
+# Web frameworks
+
+## Flask
+
+```
+<.venv> $ pip3 install Flask
+```
+
+```
+<.venv> $ python -m flask --version
+```
 
 Important Links
 - https://docs.python-guide.org/dev/virtualenvs/
