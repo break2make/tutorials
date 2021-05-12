@@ -66,7 +66,7 @@ If you are allowed to install virtualenv, then use this command to create virtua
 ```
 python3.8 -m venv example
 ```
-
+Check [here](https://python.readthedocs.io/fr/stable/library/venv.html) for more about `venv` module for creating virtual environment.
 
 
 ## Srtat using .venv
