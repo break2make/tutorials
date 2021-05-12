@@ -59,6 +59,14 @@ Options:
 - `-p` to specify the a specific version of python for your vurtual environment
 - --always-copy to avoid the symbolic link copy problem. `I found a problem without `--always-copy` while trying to create virtual environment in virtualbox shared folder in Ubuntu 20.04`.
 
+If you are allowed to install virtualenv, then use this command to create virtual environment:
+
+```
+python3.8 -m venv example
+```
+
+
+
 ## Srtat using .venv
 To begin using the virtual environment, it needs to be activated:
 
