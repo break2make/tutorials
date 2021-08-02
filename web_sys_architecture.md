@@ -1,5 +1,10 @@
 
-# Topics
+# Web System Design
+
+General reading resources:
+- Architecting Large Scale Systems | Creating Scalable Web Application Architecture [[video](https://www.youtube.com/watch?v=6pjGuuGsqxE&ab_channel=CuelogicTechnologies%7CAnLTICompany)]
+
+
 ## Monolithic vs Microservice Architecture
 ## API Gateway
 ## Proxy vs Reverse Proxy
