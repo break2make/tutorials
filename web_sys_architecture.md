@@ -15,12 +15,32 @@ For more details, check:
 ## Load Balancing 
 - Objective of load balancing is to distribute the loads instead of sending the request to a single server. 
 - Load balancer is a server that forward internet traffic to multiple servers (downstream instances). 
-- If one of the downstream server is down, it send the request to another server and hides this fact from the client.
+- If one of the downstream server is down, it send the request to another server and hides this fact from the client. The load balancer, checks the helath of the downstream server on a regular basis or before fowarding a request to the request to it.
+- It helps to manage 
+  - Scalability (horizontal scaling)
+  - Availability
+  - Flexibility
+
+Load balancer tyeps:
+- Application load banalcer (layer 7): For example, it handles http-based traffic
+- Network load balancer (layer 4): For example, it handales TCP-based traffic.
+
+> Question: How to scale load balancer?
 
 For more details, checks:
-- AWS Elastic Load Balancing Introduction [[AWS Elastic Load Balancing Introduction](https://www.youtube.com/watch?v=qpHLRc4Qt1E&ab_channel=StephaneMaarek)]
+- System Design: What is Load Balancing? [[video](https://www.youtube.com/watch?v=gMIslJN44P0&ab_channel=BeABetterDev)]
+- AWS Elastic Load Balancing Introduction [[video](https://www.youtube.com/watch?v=qpHLRc4Qt1E&ab_channel=StephaneMaarek)]
 - Load Balancer vs Reverse Proxy (Explained by Example) [[video](https://www.youtube.com/watch?v=S8J2fkN2FeI&ab_channel=HusseinNasser)]
 
+## Scaling: Horizontal vs Vertical
+Scalable dimensions:
+- Cocurrent Connections
+- CPU
+- Moemory (Volume and speed)
+- Network interfaces
+
+For more details:
+- System Design: What is Horizontal vs Vertical Scaling? [[video](https://www.youtube.com/watch?v=p1YQU5sEz4g&ab_channel=BeABetterDev)]
 
 ## Event Driven Architecture
 ## Session, Token and Cokies
