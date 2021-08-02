@@ -1,11 +1,19 @@
 
 # Topics
-- Monolithic vs Microservice Architecture
-- API Gateway
-- Proxy vs Reverse Proxy
-- Event Driven Architecture
-- Session, Token and Cokies
-- Asynchronus vs Synchronus request
+## Monolithic vs Microservice Architecture
+## API Gateway
+## Proxy vs Reverse Proxy
+In brief, (forward) proxy is used to protect clients while reverse proxy is used to protect servers. Sometimes, reverse proxy is also used as load balancer.
+
+### Resources
+- What is a Proxy? [[vodeo](https://www.youtube.com/watch?v=jGQTS1CxZTE&ab_channel=F5DevCentral)] Great explanation.
+- Proxy vs reverse proxy vs load balancer (2020) | Explained with real life examples [[video](https://www.youtube.com/watch?v=MiqrArNSxSM&ab_channel=ITkFunde)]
+- Forward proxy vs reverse proxy difference explained - Brain Bytes (Java Brains) [[video](https://www.youtube.com/watch?v=AuINJdBPf8I&ab_channel=JavaBrains)]
+- Proxy vs Reverse Proxy Server Explained [[video](https://www.youtube.com/watch?v=SqqrOspasag&ab_channel=HusseinNasser)]
+
+## Event Driven Architecture
+## Session, Token and Cokies
+## Asynchronus vs Synchronus request
 
 # Links
 - [Microservices + Events + Docker = A Perfect Trio](https://www.youtube.com/watch?v=sSm2dRarhPo)
