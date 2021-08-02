@@ -93,6 +93,11 @@ Partitioning Video: https://www.youtube.com/watch?v=QA25cMWp9Tk
 - When should you shard your database? [[video](https://www.youtube.com/watch?v=iHNovZUZM3A&ab_channel=HusseinNasser)]
 - Scaling Databases - Web Development  [[video](https://www.youtube.com/watch?v=dkhOZOmV7Fo&ab_channel=HusseinNasser)]
 
+## Docker
+
+### Nginx as Reverse Proxy
+- Docker and Nginx Reverse Proxy [[video](https://www.youtube.com/watch?v=hxngRDmHTM0&ab_channel=WesDoyle)]
+- Putting it All Together - Docker, Docker-Compose, NGinx Proxy Manager, and Domain Routing - How To. [[video](https://www.youtube.com/watch?v=cjJVmAI1Do4&ab_channel=AwesomeOpenSource)]
 
 ## API
 
