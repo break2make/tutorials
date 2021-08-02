@@ -62,8 +62,32 @@ Good for static content distribution.
 
 ## Database
 
+
+
 ### Sharding
+
+**Copied!**
+
+Before you Shard, try the following first
+0. Understand what your actual problem is before optimizing(too slow reads vs too slow writes)  Analyze your slowest queriers and see why its slow: https://youtu.be/-qNSXK7s7_w?t=237 Create indexes on appropriate columns and tune your data schema.
+
+1. Horizontal Partitioning - Have partition key(mostly on primary key) and split database into different ranges.  This will create smaller B-trees on the indexes.
+
+2. Vertical Partitioning - When you have columns that you rarely access, and you cut a column out of the main database. This will make reads faster for frequent queries and slower for not frequent queries and make your B-trees smaller(less space in memory also)
+
+Partitioning Video: https://www.youtube.com/watch?v=QA25cMWp9Tk
+---- << Database still in one machine when you do Partitioning.  Partitioning is done automatically by most modern DB systems and client doesn't have to know any difference).>>--
+
+
+3. (Read Optimization) Master-Slaves replications, with master handling all writes and slaves handling all reads.  Masters sync with slaves with latest data
+4. (Write optimization) Master-Master-Slaves replication in multi-regions(i.e. EAST vs WEST) with multiple masters handling writes, slaves handling reads, sync handled between masters<->masters and masters->read
+
+5. Finally shard when you REALLY have to.  Sharding adds complex client logic and couples with your data base.  You also lose ACID as you cannot guarantee transactions and isolation between your shards.   You can use Vitess to help you manage your sharding query logic https://vitess.io/
+
+### Resources
 - When should you shard your database? [[video](https://www.youtube.com/watch?v=iHNovZUZM3A&ab_channel=HusseinNasser)]
+- Scaling Databases - Web Development  [[video](https://www.youtube.com/watch?v=dkhOZOmV7Fo&ab_channel=HusseinNasser)]
+
 
 ## API
 
