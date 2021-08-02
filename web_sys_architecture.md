@@ -5,6 +5,8 @@
 ## Proxy vs Reverse Proxy
 In brief, (forward) proxy is used to protect clients while reverse proxy is used to protect servers. Sometimes, reverse proxy is also used as load balancer.
 
+> Question: Half vs Full proxy?
+
 For more details, check:
 
 - What is a Proxy? [[vodeo](https://www.youtube.com/watch?v=jGQTS1CxZTE&ab_channel=F5DevCentral)] Great explanation.
@@ -25,7 +27,9 @@ Load balancer tyeps:
 - Application load banalcer (layer 7): For example, it handles http-based traffic
 - Network load balancer (layer 4): For example, it handales TCP-based traffic.
 
-> Question: How to scale load balancer?
+> Question: 
+> How to scale load balancer?
+> What are the different load balancing approaches?
 
 For more details, checks:
 - System Design: What is Load Balancing? [[video](https://www.youtube.com/watch?v=gMIslJN44P0&ab_channel=BeABetterDev)]
@@ -41,10 +45,27 @@ Scalable dimensions:
 
 For more details:
 - System Design: What is Horizontal vs Vertical Scaling? [[video](https://www.youtube.com/watch?v=p1YQU5sEz4g&ab_channel=BeABetterDev)]
+- Vertical and horizontal autoscaling on Kubernetes Engine [video](https://www.youtube.com/watch?v=XpeAITE4uqA&ab_channel=GoogleCloudTech)]
+- How I scaled a website to 10 million users (web-servers & databases, high load, and performance) [[video](https://www.youtube.com/watch?v=yPF94QiI2qk&ab_channel=TechLead)]
+- 
+
+## Content Delivery Network
+
+Good for static content distribution.
+
+
+## Direct Server Return
 
 ## Event Driven Architecture
 ## Session, Token and Cokies
 ## Asynchronus vs Synchronus request
+
+## Database
+
+### Sharding
+- When should you shard your database? [[video](https://www.youtube.com/watch?v=iHNovZUZM3A&ab_channel=HusseinNasser)]
+
+## API
 
 # Links
 - [Microservices + Events + Docker = A Perfect Trio](https://www.youtube.com/watch?v=sSm2dRarhPo)
