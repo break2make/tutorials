@@ -32,3 +32,8 @@
 - C++ High Performance: Boost and optimize the performance of your C++17 code
 - C++ Concurrency in Action
 - C++ Move Semantics
+
+# Multicore Programming
+
+For more details, use the following resources:
+- Multicore Programming [[MITOpenCourseWare](https://www.youtube.com/watch?v=dx98pqJvZVk&ab_channel=MITOpenCourseWare)]
