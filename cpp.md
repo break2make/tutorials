@@ -37,3 +37,18 @@
 
 For more details, use the following resources:
 - Multicore Programming [[MITOpenCourseWare](https://www.youtube.com/watch?v=dx98pqJvZVk&ab_channel=MITOpenCourseWare)]
+
+# C++ Notes
+
+## const map
+
+It is important to note the difference between `map_name[key]` and `map_name.at(key)`, specifically when using a constant map.
+- `mapped_type& operator[] (const key_type& k)`
+  - If k matches the key of an element in the container, the function returns a reference to its mapped value.
+  - If k does not match the key of any element in the container, the function inserts a new element with that key and returns a reference to its mapped value. Notice that this always increases the container size by one, even if no mapped value is assigned to the element (the element is constructed using its default constructor).
+-  `mapped_type& at (const key_type& k)`
+   - Returns a reference to the mapped value of the element identified with key k. If k does not match the key of any element in the container, the function throws an out_of_range exception.
+
+So use `at()` when you want to access a constant map. I prefer to use at() for reading purpose comapred to `[]`.
+
+
