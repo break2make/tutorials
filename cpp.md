@@ -61,3 +61,8 @@ Check these resources:
 - [Memory Layout of C++ Object in Different Scenarios](http://www.vishalchovatiya.com/memory-layout-of-cpp-object/#:~:text=In%20the%20inheritance%20model%2C%20a,the%20class%20by%20the%20compiler.)
 - [Memory Model of Objects in C++](http://jasonleaster.github.io/2015/06/13/memory-model-of-objects-in-c-plus-plus/)
 - [C++11 Memory Model](https://people.cs.pitt.edu/~xianeizhang/notes/cpp11_mem.html)
+
+## Data-Oriented vs Object-Oriented Designs
+
+- [Data-Oriented Design (Or Why You Might Be Shooting Yourself in The Foot With OOP)](https://gamesfromwithin.com/data-oriented-design)
+- [Programming Paradigms: Object Oriented vs Data Oriented](https://prateekvjoshi.com/2013/11/30/programming-paradigms-object-oriented-vs-data-oriented/)
