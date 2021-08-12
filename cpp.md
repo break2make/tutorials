@@ -51,4 +51,13 @@ It is important to note the difference between `map_name[key]` and `map_name.at(
 
 So use `at()` when you want to access a constant map. I prefer to use at() for reading purpose comapred to `[]`.
 
+## Virtual function and inheritance
 
+Check these resources:
+- [Memory Layout of C++ Object in Different Scenarios](http://www.vishalchovatiya.com/memory-layout-of-cpp-object/#:~:text=In%20the%20inheritance%20model%2C%20a,the%20class%20by%20the%20compiler.)
+- [Memory Model of Objects in C++](http://jasonleaster.github.io/2015/06/13/memory-model-of-objects-in-c-plus-plus/)
+
+## C++ Momory MOdel
+- [Memory Layout of C++ Object in Different Scenarios](http://www.vishalchovatiya.com/memory-layout-of-cpp-object/#:~:text=In%20the%20inheritance%20model%2C%20a,the%20class%20by%20the%20compiler.)
+- [Memory Model of Objects in C++](http://jasonleaster.github.io/2015/06/13/memory-model-of-objects-in-c-plus-plus/)
+- [C++11 Memory Model](https://people.cs.pitt.edu/~xianeizhang/notes/cpp11_mem.html)
