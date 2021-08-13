@@ -47,3 +47,4 @@ For further reading:
 - Trusting in the CPU: Getting to the Roots of Security [[pdf](https://www.amd.com/system/files/2017-06/Trusting-in-the-CPU.pdf)]
 - Helping Secure the Cloud with AMD EPYC SEV [[pdf](https://developer.amd.com/wp-content/resources/HelpingSecuretheCloudwithAMDEPYCSEV.pdf)]
 - Enarx - Attested, Secured Execution with AMD’s SEV - Nathaniel McCallum & David Kaplan [[video](https://www.youtube.com/watch?v=0-ISmJNxGiY&ab_channel=TheLinuxFoundation)]
+- EXTENDING SECURE ENCRYPTED VIRTUALIZATION WITH SEV-ES [[video](https://events19.linuxfoundation.org/wp-content/uploads/2017/12/Extending-Secure-Encrypted-Virtualization-with-SEV-ES-Thomas-Lendacky-AMD.pdf)]
