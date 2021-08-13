@@ -155,6 +155,11 @@ Additional resources:
 - [C++11 Memory Model](https://people.cs.pitt.edu/~xianeizhang/notes/cpp11_mem.html)
 - https://www.modernescpp.com/index.php/c-memory-model
 
+## Branch prediction attributes likely and unlikely
+
+Additional resource:
+- https://www.geeksforgeeks.org/branch-prediction-macros-in-gcc/
+
 ## Data-Oriented vs Object-Oriented Designs
 
 - [Data-Oriented Design (Or Why You Might Be Shooting Yourself in The Foot With OOP)](https://gamesfromwithin.com/data-oriented-design)
