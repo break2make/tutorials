@@ -1,13 +1,9 @@
-# What is secure computing
-
-# Types of secure computing
-
+# Secure computing
 We can find these phrases:
 
 - **Trusted computing:** in this case, we assume that hardware platform is trusted but the softwares running on the platfrom does not trust each other. This computing paradigm establish a notion of secure world and non-secure world. While the application running on the secure world has access to the entire platfom, the non-secure world applications has limited access. This isolation is done through physical isolation with the support from the underlying hardware.
 
 - **Confidential computing:** This address the secure computing on an untrusted platform. For example, cloud computing platform is an untrusted platform.
-
 
 We have different type of computing platforms:
 - mobile, IoT device, edge device
@@ -16,3 +12,13 @@ We have different type of computing platforms:
 
 Note that in case of cloud, the hardware platform is owned and managed by cloud provided, and thus, the computing performned on a cloud platform brings bufferent trust challenge. Ideally, we cannot trust a third part platform owner whihle using the platfom for computations of confidential data. We need to have a different technies to address how to perform a secure computing in an untrusted platform.
 
+# Confidential Computing
+
+Confidential computing is a cloud computing technology that isolates sensitive data in a protected CPU enclave during processing. The contents of the enclave — the data being processed, and the techniques that are used to process it — are accessible only to authorized programming code, and are invisible and unknowable to anything or anyone else, including the cloud provider.
+
+For years, cloud providers have offered encryption services to help protect data `at rest` (in storage and databases) and `data in transit` (moving over a network connection). Confidential computing eliminates the remaining data security vulnerability by protecting data `in use` — that is, during processing or runtime.
+
+
+Additional resources:
+- https://www.ibm.com/cloud/learn/confidential-computing
+- 
