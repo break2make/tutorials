@@ -58,6 +58,98 @@ Check these resources:
 - [Memory Model of Objects in C++](http://jasonleaster.github.io/2015/06/13/memory-model-of-objects-in-c-plus-plus/)
 
 ## C++ Momory MOdel
+
+A memory location is an object of scalar type (arithmetic type, pointer type, enumeration type, or std::nullptr_t)
+or the largest contiguous sequence of bit fields of non-zero length
+
+```
+struct S {
+    char a;     // memory location #1
+    int b : 5;  // memory location #2
+    int c : 11, // memory location #2 (continued)
+          : 0,
+        d : 8;  // memory location #3
+    struct {
+        int ee : 8; // memory location #4
+    } e;
+} obj; // The object 'obj' consists of 4 separate memory locations
+```
+
+>Note: Various features of the language, such as references and virtual functions, might involve additional memory locations that are not accessible to programs but are managed by the implementation.
+
+> std::memory_order. What is the purpose of it?
+
+
+### How does a C++ reference look, memory-wise?
+
+> The C++ standard only says how it should behave, not how it should be implemented.
+
+> In ISO C++, "reference is not an object". As such, it needs not have any memory representation. It's just an alias.
+
+>  Quote from cpp primer chapter 2.3.1: A reference is not an object. Instead, a reference is just another name for an already existing object.
+
+> C++ Standard 8.3.2/4: There shall be no references to references, no arrays of references, and no pointers to references.
+
+Now consider few example, to understand this topic in details.
+
+For example [[source](https://stackoverflow.com/questions/1179937/how-does-a-c-reference-look-memory-wise)],
+
+```
+void function(int& x)
+{
+    x = 10;
+}
+
+int main()
+{
+    int i = 5;
+    int& j = i;
+
+    function(j);
+}
+```
+In the above code, j should not take space on the main stack, but the reference x of function will take a place on its stack. That means when calling function with j as an argument, the address of i that will be pushed on the stack of function. The compiler can and should not reserve space on the main stack for j.
+
+Take another example [[source](https://stackoverflow.com/questions/1179937/how-does-a-c-reference-look-memory-wise)]:
+```
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i = 10;
+    int *ptrToI = &i;
+    int &refToI = i;
+
+    cout << "i = " << i << "\n";
+    cout << "&i = " << &i << "\n";
+
+    cout << "ptrToI = " << ptrToI << "\n";
+    cout << "*ptrToI = " << *ptrToI << "\n";
+    cout << "&ptrToI = " << &ptrToI << "\n";
+
+    cout << "refToI = " << refToI << "\n";
+    //cout << "*refToI = " << *refToI << "\n";
+    cout << "&refToI = " << &refToI << "\n";
+
+    return 0;
+}
+```
+Output of this code is like this
+```
+i = 10
+&i = 0xbf9e52f8
+ptrToI = 0xbf9e52f8
+*ptrToI = 10
+&ptrToI = 0xbf9e52f4
+refToI = 10
+&refToI = 0xbf9e52f8
+```
+There is a deatiled explanation with assembly, check [[here](https://stackoverflow.com/questions/1179937/how-does-a-c-reference-look-memory-wise)].
+
+
+Additional resources:
 - [Memory Layout of C++ Object in Different Scenarios](http://www.vishalchovatiya.com/memory-layout-of-cpp-object/#:~:text=In%20the%20inheritance%20model%2C%20a,the%20class%20by%20the%20compiler.)
 - [Memory Model of Objects in C++](http://jasonleaster.github.io/2015/06/13/memory-model-of-objects-in-c-plus-plus/)
 - [C++11 Memory Model](https://people.cs.pitt.edu/~xianeizhang/notes/cpp11_mem.html)
