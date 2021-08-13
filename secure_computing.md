@@ -22,3 +22,28 @@ For years, cloud providers have offered encryption services to help protect data
 Additional resources:
 - https://www.ibm.com/cloud/learn/confidential-computing
 - 
+
+
+# AMD Confidential Computing
+
+AMD EPYC processor is extended with the following technilogy as a support for confidential computing:
+- Secure encrypted virtualization (SEV) comprises of a secure processor with SEV firmware running on it
+- Secure encrypted memory (SEM) controller with embedded ASE encryption enigne 
+
+SEV is used for key management while SEM is used memory encryption and decryption.
+
+To create a secure VM, roughly the following steps are followed:
+- Client (Guest owner) send a request to host hypervisor with VM policies and other information and hypervisor also provide this information to SEV to create a guest context
+- SEV create a memory encryption key for guest OS
+- Hypervisor allocates memory for gesy os and ask SEV to encrypt it 
+- Hypervisor loads the guest in the memory and ask SEV to measure it
+- Hyperviosor sends the guest os measurement to gest owner
+- If the measurement are as expected, the Gest owner send the confidential data to VM over a secure channel
+
+For details of the implementation and API, please chek the AMD official document as given beolow.
+
+For further reading:
+- Secure Encrypted Virtualization API Version 0.22 [[pdf](https://developer.amd.com/wp-content/resources/55766.PDF)]
+- Trusting in the CPU: Getting to the Roots of Security [[pdf](https://www.amd.com/system/files/2017-06/Trusting-in-the-CPU.pdf)]
+- Helping Secure the Cloud with AMD EPYC SEV [[pdf](https://developer.amd.com/wp-content/resources/HelpingSecuretheCloudwithAMDEPYCSEV.pdf)]
+- Enarx - Attested, Secured Execution with AMD’s SEV - Nathaniel McCallum & David Kaplan [[video](https://www.youtube.com/watch?v=0-ISmJNxGiY&ab_channel=TheLinuxFoundation)]
