@@ -18,6 +18,7 @@
 - Go to the end of line: ctrl + end
 - Go to the beginning of line: ctrl + home
 - Move code snippet up or down
+  - Linux: Alt + up/down
 - Multiline editing
   - ctrl + atl + shift
 - Side-by-side editing
