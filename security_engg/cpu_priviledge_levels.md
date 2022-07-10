@@ -7,7 +7,7 @@ Links:
 - 
 
 
-# CPU Priveldege Levels
+# CPU Privilege Levels
 
 ## Why do we even think about CPU priveledge levels?
 
