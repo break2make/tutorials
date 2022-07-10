@@ -1,8 +1,18 @@
 
+# Blockchain
+
+In most blockchains or distributed ledger technologies (DLT), the data is structured into blocks and each block contains a transaction or bundle of transactions. Each new block connects to all the blocks before it in a cryptographic chain in such a way that it's nearly impossible to tamper with. All transactions within the blocks are validated and agreed upon by a consensus mechanism, ensuring that each transaction is true and correct.
+
+Blockchain technology enables decentralization through the participation of members across a distributed network. There is no single point of failure and a single user cannot change the record of transactions. However, blockchain technologies differ in some critical security aspects.
+
+Blockchain networks can differ in who can participate and who has access to the data. Networks are typically labeled as either **public** or **private**, which describes who is allowed to participate, and **permissioned** or **permissionless**, which describes how participants gain access to the network.
+
+When building a blockchain application, it’s critical to assess which type of network will best suit your business goals. Private and permissioned networks can be tightly controlled and preferable for compliance and regulatory reasons. However, public and permissionless networks can achieve greater decentralization and distribution.
 
 
+# Anonymous Blockchain
 
-
+- https://developer.ibm.com/tutorials/cl-blockchain-private-confidential-transactions-hyperledger-fabric-zero-knowledge-proof/
 
 
 # Cryptographic methods for Privacy using Blockchains
@@ -28,4 +38,23 @@ Ring signature schemes are simplified group signature schemes that have only use
 - [Ring signature](https://en.wikipedia.org/wiki/Ring_signature)
 - [Privacy on the Blockchain: Unique Ring Signatures](https://arxiv.org/abs/1612.01188)
 - [A Hybrid Design of Linkable Ring Signature Scheme with Stealth Addresses](https://www.hindawi.com/journals/scn/2022/1417607/)
+- [Ring Signatures And Anonymisation](https://medium.com/asecuritysite-when-bob-met-alice/ring-signatures-and-anonymisation-c9640f08a193) a good resource
 
+
+# Cryptocurrency
+
+
+## Monero (private cryptocurrency)
+
+Monero obfuscates the following part of a transaction:
+- Sender address (ring signature)
+- Amount (Ring Confidential Transaction - RingCT)
+- Recipent address (Stealth Address)
+
+- [What is Monero? A Beginner’s Guide](https://www.youtube.com/watch?v=qrUq0v5VgdU&ab_channel=99Bitcoins)
+- [How to Transact Cryptocurrency Anonymously: Monero Tutorial](https://www.youtube.com/watch?v=VYdfYUIQ_9c&ab_channel=CryptoTraders)
+
+
+# Dark Web
+
+# Web3
