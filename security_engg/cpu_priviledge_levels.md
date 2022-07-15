@@ -15,6 +15,11 @@ Modern software expects to be split into different modules, each with a differen
 
 Most software developers are at least somewhat familiar with the concept of privilege on a computer. For example, the operating system is able to perform operations that are prohibited for processes running in user space. This allows for isolation and protection; a single process is not able to access the memory of another, and a process that crashes does not corrupt the entire system. To enable this model, hardware must offer varying levels of privilege and the ability to move between them.
 
+Effective use of ring architecture requires close cooperation between hardware and the operating system. Operating systems designed to work on multiple hardware platforms may make only limited use of rings if they are not present on every supported platform. Often the security model is simplified to "kernel" and "user" even if hardware provides finer granularity through rings.
+
+Links:
+- https://en.wikipedia.org/wiki/Protection_ring
+
 ## What is the protection ring for linux operating system?
 
 ## How the Privilege Rings Interact?
@@ -22,6 +27,8 @@ Most software developers are at least somewhat familiar with the concept of priv
 
 
 ## What are the ARM privilege/exception levels?
+
+ARM version 7 architecture implements three privilege levels: application (PL0), operating system (PL1), and hypervisor (PL2). Unusually, level 0 (PL0) is the least-privileged level, while level 2 is the most-privileged level.[8] ARM version 8 implements four exception levels: application (EL0), operating system (EL1), hypervisor (EL2), and secure monitor / firmware (EL3), for AArch64 and AArch32.
 
 ![](blob:https://developer.arm.com/f9cbb1f2-cfb6-4992-8733-47dbdd914e45)
 **Exception levels are referred to as EL<x>**
