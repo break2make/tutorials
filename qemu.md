@@ -1,0 +1,9 @@
+- https://balau82.wordpress.com/2010/08/17/debugging-arm-programs-inside-qemu/
+- [Debugging the Linux Kernel with Qemu and GDB](https://www.youtube.com/watch?v=2VcA5Wj7IvU)
+- [Best Practices for Debugging Connected Applications running Zephyr](https://www.youtube.com/watch?v=und6sMsjSHc)
+- https://qemu-project.gitlab.io/qemu/system/gdb.html
+- https://course.ece.cmu.edu/~ee349/f-2012/lab2/qemu.pdf
+- https://www.how2shout.com/linux/how-to-install-qemu-kvm-on-ubuntu-22-04-20-04-lts/
+- https://www.imaginelinux.com/install-qemu-on-ubuntu/
+- https://www.linuxcapable.com/install-cmake-on-ubuntu-20-04-lts/
+- http://www.helenos.org/wiki/DebuggingWithQEMUAndGDB
