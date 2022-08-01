@@ -5,11 +5,11 @@ QEMU is a generic and open source **machine emulator** and **virtualizer**.
 
 QEMU can be used in several different ways. 
 
-- The most common is for “system emulation”, where it provides a virtual model of an entire machine (CPU, memory and emulated devices) to run a guest OS. In this mode the CPU may be fully emulated, or it may work with a hypervisor such as KVM, Xen, Hax or Hypervisor.Framework to allow the guest to run directly on the host CPU.
+- The most common is for **“system emulation”**, where it provides a virtual model of an entire machine (CPU, memory and emulated devices) to run a guest OS. In this mode the CPU may be fully emulated, or it may work with a hypervisor such as KVM, Xen, Hax or Hypervisor. Framework to allow the guest to run directly on the host CPU.
 
-- The second supported way to use QEMU is “user mode emulation”, where QEMU can launch processes compiled for one CPU on another CPU. In this mode the CPU is always emulated.
+- The second supported way to use QEMU is **“user mode emulation”**, where QEMU can launch processes compiled for one CPU on another CPU. In this mode the CPU is always emulated.
 
-QEMU also provides a number of standalone command line utilities, such as the `qemu-img` disk image utility that allows you to create, convert and modify disk images.
+QEMU also provides a number of standalone command line utilities, such as the **`qemu-img`** disk image utility that allows you to create, convert and modify disk images.
 
 ## Terminologies
 
@@ -23,7 +23,7 @@ The target is the architecture which is emulated by QEMU. You can choose at buil
 ./configure --target-list=ppc-softmmu ...
 ```
 
-As such, in the source code organisation you will find all supported architectures in the target/ directory:
+As such, in the source code organization you will find all supported architectures in the target/ directory:
 
 ```
 (qemu-git) ll target
@@ -162,11 +162,11 @@ Debugging using gdbserver inside QEMU. [[source](https://balau82.wordpress.com/2
 
 QEMU started out as a novel way to run alternative OSes from within a Linux environment and evolved into a full-featured virtualization tool. QEMU 5.0 runs on Linux, macOS and Windows. On Linux, admins can either run full-system emulation mode or user-mode emulation. It's also possible to run either KVM or Xen VMs, with performance approaching that of the native hardware.
 
-Both KVM and Xen function as hypervisors, meaning they serve as a layer between the hardware and the virtual images running in their own memory space. KVM -- a Type 2 hypervisor -- runs on top of the underlying Linux OS, whereas Xen -- a Type 1 hypervisor -- runs directly on the hardware without an underlying OS.
+Both KVM and Xen function as hypervisors, meaning they serve as a layer between the hardware and the virtual images running in their own memory space. **KVM -- a Type 2 hypervisor** -- runs on top of the underlying Linux OS, whereas **Xen -- a Type 1 hypervisor** -- runs directly on the hardware without an underlying OS.
 
-QEMU is an application that runs just like any other application on the host OS. QEMU functions as a Type 2 hypervisor because it runs on top of a host OS. Because of this, admins might notice that QEMU and KVM are similar; KVM can perform hardware acceleration. The big difference is that QEMU can emulate different CPU architectures in software.
+QEMU is an application that runs just like any other application on the host OS. QEMU functions as a Type 2 hypervisor because it runs on top of a host OS. Because of this, admins might notice that QEMU and KVM are similar; **KVM can perform hardware acceleration. The big difference is that QEMU can emulate different CPU architectures in software.**
 
-Kata Containers is an example of QEMU in action. Kata Containers aims to take the best of containers and VMs and merge them together. Security stands out as a primary focus of Kata Containers, demonstrated by providing stronger workload isolation using hardware virtualization technology as a second layer of defense.
+**Kata Containers is an example of QEMU in action.** Kata Containers aims to take the best of containers and VMs and merge them together. Security stands out as a primary focus of Kata Containers, demonstrated by providing stronger workload isolation using hardware virtualization technology as a second layer of defense.
 
 
 ## Links
