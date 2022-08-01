@@ -61,3 +61,9 @@ If you need to extract the content of the generated tar to a custom directory in
 ```bash
 tar -xvzf sandbox_compressed.tar.gz -C /target/directory
 ```
+
+## FAQ
+
+### File Permissions mode ending in @ or +
+- https://unix.stackexchange.com/questions/92071/file-permissions-mode-ending-in-or
+- https://www.thomaskeller.biz/blog/2011/06/04/acls-on-mac-os-x/
